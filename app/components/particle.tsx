@@ -18,58 +18,64 @@ export function ParticleBackground() {
     }, []);
 
     return (
-        <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={{
-                background: {
-                    color: {
-                        value: "primary",
+      
+            <Particles
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                className="z-[-1]"
+                options={{
+                    style:{
+                        position:"absolute"
                     },
-                },
-                fpsLimit: 120,
-                particles: {
-                    color: {
-                        value: "#ffffff",
+                    background: {
+                        color: {
+                            value: "primary",
+                        }
                     },
-                    links: {
-                        color: "#ffffff",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                    },
-                    move: {
-                        direction: "none",
-                        enable: true,
-                        outModes: {
-                            default: "bounce",
+                    fpsLimit: 120,
+                    particles: {
+                        maxConnections: 1,
+                        color: {
+                            value: "#cc0000",
                         },
-                        random: false,
-                        speed: 6,
-                        straight: false,
-                    },
-                    number: {
-                        density: {
+                        links: {
+                            color: "#ffcccc",
+                            distance: 175,
                             enable: true,
-                            area: 800,
+                            opacity: 0.5,
+                            width: 1,
+                            
+                            
                         },
-                        value: 80,
+                        move: {
+                            direction: "none",
+                            enable: true,
+                            
+                            random: true,
+                            speed: {min:.5,max:5},
+                            straight: false,
+                        },
+                        number: {
+                            density: {
+                                enable: true,
+                                area: 250,
+                            },
+                            value: 3,
+                        },
+                        opacity: {
+                            value: 0.5,
+                        },
+                        shape: {
+                            type: "circle",
+                        },
+                        size: {
+                            value: { min: 1, max: 7 },
+                        },
                     },
-                    opacity: {
-                        value: 0.5,
-                    },
-                    shape: {
-                        type: "circle",
-                    },
-                    size: {
-                        value: { min: 1, max: 5 },
-                    },
-                },
-                detectRetina: true,
-            }}
-            
-        />
+                   
+                }}
+            />
+     
     );
 };

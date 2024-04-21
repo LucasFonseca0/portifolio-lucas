@@ -20,7 +20,7 @@ const config: Config = {
       },
       colors:{
         primary: '#ff0000', // cor primária vermelha
-        secondary: '#990000', // cor secundária vermelha
+        secondary: '#FFD700', // cor secundária vermelha
         light: '#ffcccc', // cor vermelha clara
         dark: '#660000', // cor vermelha escura
         default: '#cc0000',// cor vermelha padrão
