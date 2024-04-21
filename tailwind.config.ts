@@ -24,11 +24,26 @@ const config: Config = {
         light: '#ffcccc', // cor vermelha clara
         dark: '#660000', // cor vermelha escura
         default: '#cc0000',// cor vermelha padrão
-      }
+      },
+      keyframes: {
+        'fade-in-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(2rem)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+      },
+      animation: {
+        'fade-in-up': 'fade-in-up 0.5s ease-out',
+      },
     },
     darkMode: "class",
   plugins: [nextui()],
   },
-  plugins: [],
+
 };
 export default config;

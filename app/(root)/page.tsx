@@ -1,25 +1,39 @@
 "use client"
-
 import { Avatar } from "@nextui-org/react";
 import { ParticleBackground } from "../components/particle";
+import { useTranslation, Trans } from 'react-i18next';
+import i18n from "../../i18n"
 
 export default function Home() {
+  const { t } = useTranslation();
+
+  const changeLanguage = (language:any) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
-    <div className="relative w-full ">
-      <div className="relative h-[90vh] w-full bg-[url('/images/background4.png')] bg-cover bg-center">
-        <header className="text-4xl flex justify-center items-start h-60 gap-3 md:items-center md:justify-start md:pl-20 z-10 relative">
-          <Avatar src="/images/photo.jpg" className="w-32 h-32 text-large  relative z-20" />
-          <div className="relative z-20">
-            <h1 className="font-medium">LUCAS FONSECA</h1>
-            <h2>Fullstack developer</h2>
+    <div className="relative w-full animate-fade-in-up">
+      <div className="relative  h-[90vh] w-full bg-[url('/images/background4.png')] bg-cover bg-center">
+        <header className=" animate-fade-in-up flex justify-between  h-52 pl-6  sm:pl-14 md:pl-20 z-10 relative">
+          <div className="flex items-center gap-3 ">
+            <Avatar src="/images/photo.jpg" className=" w-20 h-20 md:w-32 md:h-32 text-large relative z-20" alt={t('name')} />
+            <div className="relative z-20 text:xl sm:text-2xl md:text-4xl">
+              <h1 className="font-medium">{t('name')}</h1>
+              <h2>{t('role')}</h2>
+            </div>
           </div>
-          <div>
-            
-          </div>
+            <div className="p-7 " >
+              <button onClick={() => changeLanguage('en')}>EN</button>|
+              <button onClick={() => changeLanguage('pt')}>PT</button>
+            </div>
         </header>
+        <div className="relative z-20 sm:p-20 md:p-20 xl:p-40">
+          <article className="w-[70%] animate-fade-in-up  m-auto text-3xl md:text-4xl xl:text-6xl sm:m-0 [&>span]:text-secondary font-semibold">
+            <Trans i18nKey="intro" components={{ 1: <span  /> }} />
+          </article>
+        </div>
         <ParticleBackground />
       </div>
     </div>
   );  
 }
-
