@@ -1,13 +1,14 @@
-"use client";
+"use client"
+
+import { ParticleBackground } from "../components/particle";
 
 export default function Home() {
   return (
-    <div className="">
-      <header className="mb-auto h-40">...</header>
-      <main>
-        <h1 className="text-2xl">Lucas Fonseca</h1>
-        <h2>Fullstack developer</h2>
-      </main>
+    <div className="relative w-full h-screen">
+      <div className="relative h-52 w-full overflow-hidden">
+        <ParticleBackground />
+      </div>
+      <h1>yes</h1>
     </div>
   );
 }

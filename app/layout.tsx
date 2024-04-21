@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Poppins } from "next/font/google";
 
 import "./globals.css";
+import { NextUIProvider } from "@nextui-org/react";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,8 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} bg-black text-white`}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+        <body className={`${poppins.className} bg-black text-white`}>
+      <NextUIProvider>
+          {children}
+      </NextUIProvider>
+          </body>
     </html>
   );
 }
