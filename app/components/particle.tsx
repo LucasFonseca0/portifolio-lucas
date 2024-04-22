@@ -37,7 +37,7 @@ export function ParticleBackground() {
                     particles: {
                         maxConnections: 1,
                         color: {
-                            value: "#cc0000",
+                            value: "#be2929",
                         },
                         links: {
                             color: "#ffcccc",
@@ -49,11 +49,11 @@ export function ParticleBackground() {
                             
                         },
                         move: {
-                            direction: "none",
+                            direction: "right",
                             enable: true,
                             
                             random: true,
-                            speed: {min:.5,max:5},
+                            speed: {min:.5,max:3},
                             straight: false,
                         },
                         number: {
