@@ -13,7 +13,7 @@ export default function Home() {
 
   const changeLanguage = (language:any) => {
     setLang(language)
-    i18n.changeLanguage(lang);
+    i18n.changeLanguage(language);
   };
 
   return (
