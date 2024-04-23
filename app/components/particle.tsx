@@ -23,7 +23,7 @@ export function ParticleBackground() {
                 id="tsparticles"
                 init={particlesInit}
                 loaded={particlesLoaded}
-                className="z-[-1]"
+                className="z-[1]"
                 options={{
                     style:{
                         position:"absolute"
@@ -53,7 +53,7 @@ export function ParticleBackground() {
                             enable: true,
                             
                             random: true,
-                            speed: {min:.5,max:3},
+                            speed: {min:.5,max:2.5},
                             straight: false,
                         },
                         number: {
@@ -63,9 +63,7 @@ export function ParticleBackground() {
                             },
                             value: 3,
                         },
-                        opacity: {
-                            value: 0.5,
-                        },
+                       
                         shape: {
                             type: "circle",
                         },
