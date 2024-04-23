@@ -18,7 +18,10 @@ export default function Home() {
 
   return (
     <div className="relative w-full ">
+
       <div className="relative  h-[90vh] w-full bg-[url('/images/background9V.png')] md:bg-[url('/images/background9.png')]  bg-cover bg-center">
+
+      
         <header className=" animate-fade-in-up flex justify-between  h-52 pl-6  sm:pl-14 md:pl-20 z-10 relative">
           <div className="flex items-center gap-3 ">
             <Avatar src="/images/photo.jpg" className=" w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 text-large relative z-20" alt={t('name')} />
