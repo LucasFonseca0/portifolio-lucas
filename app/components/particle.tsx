@@ -49,7 +49,7 @@ export function ParticleBackground() {
                             
                         },
                         move: {
-                            direction: "right",
+                            direction: "none",
                             enable: true,
                             
                             random: true,
@@ -59,7 +59,7 @@ export function ParticleBackground() {
                         number: {
                             density: {
                                 enable: true,
-                                area: 250,
+                                area: 200,
                             },
                             value: 3,
                         },
