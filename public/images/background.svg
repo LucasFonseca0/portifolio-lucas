@@ -2,7 +2,7 @@
 <g clip-path="url(#clip0_2_2)" filter="url(#filter0_d_2_2)">
 <rect width="1595" height="954" transform="translate(4)" fill="black"/>
 <g filter="url(#filter1_f_2_2)">
-<ellipse cx="1604" cy="129.5" rx="1192" ry="1015.5" fill="url(#paint0_radial_2_2)"/>
+<ellipse cx="1604" cy="174.5" rx="1101" ry="991.5" fill="url(#paint0_radial_2_2)"/>
 </g>
 <g filter="url(#filter2_f_2_2)">
 <path d="M1124 4L1124 700C1124 722.091 1141.91 740 1164 740H1604" stroke="url(#paint1_linear_2_2)" stroke-linecap="round"/>
@@ -40,7 +40,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_2"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_2" result="shape"/>
 </filter>
-<filter id="filter1_f_2_2" x="312" y="-986" width="2584" height="2231" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_f_2_2" x="403" y="-917" width="2402" height="2183" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2_2"/>
@@ -105,8 +105,8 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_2"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_2" result="shape"/>
 </filter>
-<radialGradient id="paint0_radial_2_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1604 129.5) rotate(90) scale(1015.5 1192)">
-<stop stop-color="#6B0F0F" stop-opacity="0.2"/>
+<radialGradient id="paint0_radial_2_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1604 174.5) rotate(90) scale(991.5 1101)">
+<stop stop-color="#6B0F0F" stop-opacity="0.45"/>
 <stop offset="1" stop-color="#410B0B" stop-opacity="0.1"/>
 </radialGradient>
 <linearGradient id="paint1_linear_2_2" x1="1364" y1="4" x2="1364" y2="354" gradientUnits="userSpaceOnUse">
