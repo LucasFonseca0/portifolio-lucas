@@ -23,9 +23,7 @@ export default function Home() {
     
 
       <div className="relative flex flex-col  h-[90vh] w-full bg-[url('/images/backgroundV.svg')] md:bg-[url('/images/background.svg')]  bg-cover bg-center">
-      <Image src="/images/backgroundV.svg" alt="background" layout="fill" objectFit="cover" quality={100} priority className="absolute" />
-      <Image src="/images/background.svg"alt="background" layout="fill" objectFit="cover" quality={100} priority className="absolute md:block hidden" />
-      
+
         <header className=" animate-fade-in-up flex justify-between  h-52 pl-6  sm:pl-14 md:pl-20 z-10 relative">
           <div className="flex items-center gap-3 ">
             <Avatar showFallback src="/images/photo.svg" className=" w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 text-large relative z-20" alt={t('name')} />

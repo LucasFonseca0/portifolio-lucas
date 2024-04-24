@@ -1,7 +1,3 @@
-"use client"
-
-
-
 import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
@@ -18,16 +14,13 @@ export function ParticleBackground() {
     }, []);
 
     return (
-      
+        <div className="absolute inset-0">
             <Particles
                 id="tsparticles"
                 init={particlesInit}
                 loaded={particlesLoaded}
-                className="z-[1]"
+                className="z-[1] w-full h-full"
                 options={{
-                    style:{
-                        position:"absolute"
-                    },
                     background: {
                         color: {
                             value: "primary",
@@ -45,15 +38,12 @@ export function ParticleBackground() {
                             enable: true,
                             opacity: 0.5,
                             width: 1,
-                            
-                            
                         },
                         move: {
                             direction: "none",
                             enable: true,
-                            
                             random: true,
-                            speed: {min:.5,max:2.5},
+                            speed: { min: .5, max: 2.5 },
                             straight: false,
                         },
                         number: {
@@ -63,7 +53,6 @@ export function ParticleBackground() {
                             },
                             value: 3,
                         },
-                       
                         shape: {
                             type: "circle",
                         },
@@ -71,9 +60,8 @@ export function ParticleBackground() {
                             value: { min: 1, max: 7 },
                         },
                     },
-                   
                 }}
             />
-     
+        </div>
     );
 };
