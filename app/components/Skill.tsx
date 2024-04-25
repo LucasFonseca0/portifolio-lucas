@@ -4,9 +4,15 @@ import TranslateLeft from "../animation/TranslateLeft.animation";
 const Skills = () => {
   return (
     <section>
-      <h2 className="text-2xl relative flex justify-center font-extrabold">
+      <h2 className="text-2xl sm:text-3xl md:text-5xl relative flex justify-center font-extrabold">
         <span className="absolute inset-0 bg-pastel h-1/2 -z-10"></span>
-        SKILLS
+        <span className="absolute right-[4%] sm:right-[8%] md:right-[10%] w-1/3 h-1/2 -z-10 flex justify-center items-center  translate-y-[50%] "> 
+            <span className="h-1 w-full bg-secondary"></span>
+        </span>
+        <span className="absolute left-[4%] sm:left-[8%] md:left-[10%] w-1/3 h-1/2 -z-10 flex justify-center items-center  translate-y-[50%] "> 
+            <span className="h-1 w-full bg-secondary"></span>
+        </span>
+          SKILLS
       </h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
