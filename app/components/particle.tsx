@@ -60,9 +60,11 @@ export function ParticleBackground() {
                             density: {
                                 enable: true,
                                 area: 170
+                                
                             },
                             value: 2.5,
-                           limit:15
+                           limit:12,
+                           
                         },
                        
                         shape: {
