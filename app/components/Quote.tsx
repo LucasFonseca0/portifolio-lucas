@@ -3,6 +3,7 @@ import { Trans, useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import TranslateLeft from "../animation/TranslateLeft.animation";
+import TranslateRight from "../animation/TranslateRight";
 
 const Quote = () => {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ const Quote = () => {
   return (
     <section className="bg-pastel flex flex-col justify-center  ">
       <div className="w-[90%] italic flex justify-center items-center text-xl sm:text-2xl md:text-3xl">
-          <div className=" w-[70%] sm:text-xl mt-24 mb-20 md:text-2xl">
+          <div className=" w-[70%] sm:text-xl mt-[11vh] mb-[11vh] md:text-2xl">
         <TranslateLeft ref={ref}>
             <q className="italic font-semibold text-xl sm:text-2xl md:text-3xl">
               <Trans
@@ -20,7 +21,7 @@ const Quote = () => {
               />
             </q>
         </TranslateLeft>{" "}
-            - {t("autor")}
+            <TranslateRight>- {t("autor")}</TranslateRight>
           </div>
       </div>
     </section>
