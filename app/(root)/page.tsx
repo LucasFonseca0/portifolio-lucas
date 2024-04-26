@@ -1,7 +1,7 @@
 "use client";
-import Introduction from "../components/Introduction";
-import Quote from "../components/Quote";
-import Skills from "../components/Skills";
+import Introduction from "../components/homeComponents/Introduction";
+import Quote from "../components/homeComponents/Quote";
+import Skills from "../components/homeComponents/Skills";
 
 
 export default function Home() {
