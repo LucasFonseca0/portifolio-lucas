@@ -4,7 +4,7 @@ import { useInView } from "framer-motion";
 
 export default function TranslateLeft({ children }:any) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true,amount:1 });
 
   return (
     <div ref={ref}>

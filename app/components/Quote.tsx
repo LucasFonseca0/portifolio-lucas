@@ -12,7 +12,7 @@ const Quote = () => {
   return (
     <section className="bg-pastel flex flex-col justify-center  ">
       <div className="w-[90%] italic flex justify-center items-center text-xl sm:text-2xl md:text-3xl">
-          <div className=" w-[70%] sm:text-xl mt-[11vh] mb-[11vh] md:text-2xl">
+          <div className=" w-[70%] sm:text-xl mt-[11vh] mb-[15vh] md:text-2xl">
         <TranslateLeft ref={ref}>
             <q className="italic font-semibold text-xl sm:text-2xl md:text-3xl">
               <Trans
