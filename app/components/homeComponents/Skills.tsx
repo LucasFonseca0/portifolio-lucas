@@ -1,5 +1,5 @@
 import TranslateAnimation from "@/app/animation/TranslateAnimation.animation";
-import AutoSlider from "../skillsComponents/autoSlider";
+import AutoSlider from "@/app/components/skillsComponents/autoSlider";
 
 const Skills = () => {
   return (
