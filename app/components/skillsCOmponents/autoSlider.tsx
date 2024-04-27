@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 const AutoSlider: React.FC = () => {
   const [index, setIndex] = useState<number>(3);
   const logoNames: LogoName[] = ["typescript", "next", "nest", "tailwind", "database","react","mongodb","docker","git"];
-  const delay = 1500;
+  const delay = 2500;
 
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
