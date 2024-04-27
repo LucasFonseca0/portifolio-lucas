@@ -12,7 +12,7 @@ const Skills = () => {
        
         <TranslateAnimation.TranslateUp>
 
-        <p  className="bg-white rounded-2xl p-3 text-secondary ">SKILLS</p>
+        <p  className="bg-white rounded-2xl p-2 sm:p-3 text-secondary ">SKILLS</p>
         </TranslateAnimation.TranslateUp>
       </h2>
       <div className="p-4 sm:p-6  md:p-8 w-full flex flex-col gap-4 sm:text-xl md:text-2xl overflow-hidden ">
