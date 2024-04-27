@@ -26,7 +26,7 @@ const Introduction = () => {
               <h2 >{t('role')}</h2>
             </div>
           </div>
-            <div className={`p-7 sm:p-9 md:p-12 rt text-sm text-nowrap sm:text-xl`}  >
+            <div className={`p-7 sm:p-9 md:p-12 rt text-sm text-nowrap sm:text-xl md:text-2xl xl:text-3xl`}  >
               <button onClick={() => changeLanguage('en')} className={`${lang === "en" && "text-primaryDarkest"} transition` }>EN</button>|
               <button onClick={() => changeLanguage('pt')} className={`${lang === "pt" && "text-primaryDarkest"}  transition`}>PT</button>
             </div>
