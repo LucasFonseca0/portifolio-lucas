@@ -3,6 +3,7 @@
 <rect width="1595" height="954" transform="translate(4)" fill="black"/>
 <g filter="url(#filter1_f_2_2)">
 <ellipse cx="1604" cy="174.5" rx="1101" ry="991.5" fill="url(#paint0_radial_2_2)"/>
+<path d="M2704.5 174.5C2704.5 721.766 2211.84 1165.5 1604 1165.5C996.16 1165.5 503.5 721.766 503.5 174.5C503.5 -372.766 996.16 -816.5 1604 -816.5C2211.84 -816.5 2704.5 -372.766 2704.5 174.5Z" stroke="black"/>
 </g>
 <g filter="url(#filter2_f_2_2)">
 <path d="M1124 4L1124 700C1124 722.091 1141.91 740 1164 740H1604" stroke="url(#paint1_linear_2_2)" stroke-linecap="round"/>
@@ -106,40 +107,40 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_2" result="shape"/>
 </filter>
 <radialGradient id="paint0_radial_2_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1604 174.5) rotate(90) scale(991.5 1101)">
-<stop stop-color="#6B0F0F" stop-opacity="0.45"/>
-<stop offset="1" stop-color="#410B0B" stop-opacity="0.1"/>
+<stop stop-color="#FF8000" stop-opacity="0.3"/>
+<stop offset="1" stop-color="#FF8000" stop-opacity="0.05"/>
 </radialGradient>
 <linearGradient id="paint1_linear_2_2" x1="1364" y1="4" x2="1364" y2="354" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C44D4D"/>
-<stop offset="1" stop-color="#C44D4D" stop-opacity="0.8"/>
+<stop stop-color="#FF8000"/>
+<stop offset="1" stop-color="#FF8000" stop-opacity="0.8"/>
 </linearGradient>
 <linearGradient id="paint2_linear_2_2" x1="1549" y1="1231" x2="1549" y2="910.959" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C44D4D"/>
-<stop offset="1" stop-color="#C44D4D" stop-opacity="0.8"/>
+<stop stop-color="#FF8000"/>
+<stop offset="1" stop-color="#FF8000" stop-opacity="0.8"/>
 </linearGradient>
 <linearGradient id="paint3_linear_2_2" x1="1650" y1="1036" x2="1300" y2="1036" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C44D4D"/>
-<stop offset="1" stop-color="#C44D4D" stop-opacity="0.8"/>
+<stop stop-color="#FF8000"/>
+<stop offset="1" stop-color="#FF8000" stop-opacity="0.8"/>
 </linearGradient>
 <linearGradient id="paint4_linear_2_2" x1="1053" y1="0" x2="1053" y2="663" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C44D4D"/>
-<stop offset="1" stop-color="#C44D4D" stop-opacity="0.8"/>
+<stop stop-color="#FF8000"/>
+<stop offset="1" stop-color="#FF8000" stop-opacity="0.8"/>
 </linearGradient>
 <linearGradient id="paint5_linear_2_2" x1="1364" y1="4" x2="1364" y2="354" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C44D4D"/>
-<stop offset="1" stop-color="#C44D4D" stop-opacity="0.8"/>
+<stop stop-color="#FF8000"/>
+<stop offset="1" stop-color="#FF8000" stop-opacity="0.8"/>
 </linearGradient>
 <linearGradient id="paint6_linear_2_2" x1="1549" y1="1231" x2="1549" y2="910.959" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C44D4D"/>
-<stop offset="1" stop-color="#C44D4D" stop-opacity="0.8"/>
+<stop stop-color="#FF8000"/>
+<stop offset="1" stop-color="#FF8000" stop-opacity="0.8"/>
 </linearGradient>
 <linearGradient id="paint7_linear_2_2" x1="1650" y1="1036" x2="1300" y2="1036" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C44D4D"/>
-<stop offset="1" stop-color="#C44D4D" stop-opacity="0.8"/>
+<stop stop-color="#FF8000"/>
+<stop offset="1" stop-color="#FF8000" stop-opacity="0.8"/>
 </linearGradient>
 <linearGradient id="paint8_linear_2_2" x1="1053" y1="0" x2="1053" y2="663" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C44D4D"/>
-<stop offset="1" stop-color="#C44D4D" stop-opacity="0.8"/>
+<stop stop-color="#FF8000"/>
+<stop offset="1" stop-color="#FF8000" stop-opacity="0.8"/>
 </linearGradient>
 <clipPath id="clip0_2_2">
 <rect width="1595" height="954" fill="white" transform="translate(4)"/>

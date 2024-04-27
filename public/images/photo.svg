@@ -8,8 +8,8 @@
 <use xlink:href="#image0_3_41" transform="scale(0.000488281)"/>
 </pattern>
 <radialGradient id="paint0_angular_3_41" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(500 500) rotate(90) scale(500)">
-<stop stop-color="#F81717"/>
-<stop offset="1" stop-color="#920D0D"/>
+<stop stop-color="#FF8000"/>
+<stop offset="0.495" stop-color="#FF9933"/>
 </radialGradient>
 <clipPath id="clip0_3_41">
 <rect width="1000" height="1000" fill="white"/>

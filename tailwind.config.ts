@@ -18,14 +18,18 @@ const config: Config = {
       fontFamily: {
         Poppins: ["var(--font-Poppins)"],
       },
-      colors:{
-        primary: '#ff0000', // cor primária vermelha
-        secondary: '#FFD700', // cor secundária vermelha
-        light: '#ffcccc', // cor vermelha clara
-        dark: '#660000', // cor vermelha escura
-        default: '#cc0000',// cor vermelha padrão
-        pastel:'orange',
-      },
+      colors: {
+        primaryLightest: '#ffedcc', // laranja pastel mais claro
+        primaryLight: '#ffdab9', // laranja pastel claro
+        primary: '#ffb366', // laranja pastel padrão
+        primaryDark: '#ff9933', // laranja pastel escuro
+        primaryDarkest: '#ff8000', // laranja pastel mais escuro
+        secondary: '#003366', // azul escuro para contraste
+    }
+    
+    
+    
+    ,
       keyframes: {
         'fade-in-up': {
           '0%': {

@@ -37,7 +37,7 @@ export function ParticleBackground() {
                     particles: {
                         maxConnections: 1,
                         color: {
-                            value: "#be2929",
+                            value: "#ff9933",
                         },
                         links: {
                             color: "#ffcccc",

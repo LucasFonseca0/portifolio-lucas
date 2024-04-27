@@ -27,8 +27,8 @@ const Introduction = () => {
             </div>
           </div>
             <div className={`p-7 sm:p-9 md:p-12 rt text-sm text-nowrap sm:text-xl`}  >
-              <button onClick={() => changeLanguage('en')} className={`${lang === "en" && "text-secondary"} transition` }>EN</button>|
-              <button onClick={() => changeLanguage('pt')} className={`${lang === "pt" && "text-secondary"}  transition`}>PT</button>
+              <button onClick={() => changeLanguage('en')} className={`${lang === "en" && "text-primaryDarkest"} transition` }>EN</button>|
+              <button onClick={() => changeLanguage('pt')} className={`${lang === "pt" && "text-primaryDarkest"}  transition`}>PT</button>
             </div>
         </header>
         <div className="relative flex flex-col flex-grow justify-center h-auto z-20 sm:pl-20 md:pl-20 xl:pl-40">
