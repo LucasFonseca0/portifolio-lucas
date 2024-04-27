@@ -1,1 +1,1 @@
-type LogoName = "typescript" | "next" |"nest"|"tailwind"|"database";
+type LogoName = "typescript" | "next" |"nest"|"tailwind"|"database"|"react"|"mongodb"|"docker"|"git";

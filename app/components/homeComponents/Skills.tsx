@@ -1,9 +1,6 @@
-import React from "react";
-import TranslateLeft from "../../animation/TranslateLeft.animation";
 
-import SkillsSVG from "../../SVGs/SkillsSVG";
-import TranslateRight from "../../animation/TranslateRight";
-import AutoSlider from "../skillsCOmponents/autoSlider";
+import TranslateAnimation from "@/app/animation/TranslateAnimation.animation";
+import AutoSlider from "../skillsComponents/autoSlider";
 
 const Skills = () => {
   return (
@@ -18,9 +15,12 @@ const Skills = () => {
         </span>
         SKILLS
       </h2>
-      <div className=" w-full ">
-        <h3 className="text-xl pl-4 pt-4">HardSkils</h3>
+      <div className="  ">
         <AutoSlider/>
+        
+        <p>Sou um desenvolvedor full-stack com especialização em Next.js no frontend e Nest.js no backend. Utilizo Tailwind CSS para garantir interfaces elegantes e Docker para ambientes consistentes. Minha experiência abrange bancos de dados SQL e NoSQL, utilizando ORMs como Mongoose e Prisma. Sou proficiente em Git e GitHub para controle de versão colaborativo.</p>
+
+
         
         
       </div>

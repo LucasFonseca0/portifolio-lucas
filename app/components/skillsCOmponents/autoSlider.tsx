@@ -1,62 +1,42 @@
+import SkillsSVG from "@/app/SVGs/SkillsSVG";
 import { useEffect, useRef, useState } from "react";
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28","red"];
-const delay = 2500;
+const AutoSlider: React.FC = () => {
+  const [index, setIndex] = useState<number>(3);
+  const logoNames: LogoName[] = ["typescript", "next", "nest", "tailwind", "database","react","mongodb","docker","git"];
+  const delay = 1500;
 
-export default function AutoSlider() {
-  const [index, setIndex] = useState(0);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const timeoutRef = useRef<any>(null);
-
-  function resetTimeout() {
+  const resetTimeout = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
-  }
+  };
 
   useEffect(() => {
     resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
+    timeoutRef.current = setTimeout(() =>
+      setIndex((prevIndex) =>
+        prevIndex === logoNames.length - 1 ? 0 : prevIndex + 1
+      ), delay);
 
     return () => {
       resetTimeout();
     };
   }, [index]);
 
-  return (
-    <div className=" max-w-[500px] mx-auto">
-      <div
-        className=" whitespace-nowrap transition-transform ease-in-out duration-1000"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
-        {colors.map((backgroundColor, index) => (
-          <div
-            className="slide inline-block h-[400px] w-full rounded-40px"
-            key={index}
-            style={{ backgroundColor }}
-          ></div>
-        ))}
-      </div>
-
-      <div className=" text-center">
-        {colors.map((_, idx) => (
-          <div
-            key={idx}
-            className={` inline-block h-20px w-20px rounded-full cursor-pointer mt-15px mx-7px ${
-              index === idx ? "bg-purple-600" : "bg-gray-300"
-            }`}
-            onClick={() => {
-              setIndex(idx);
-            }}
-          ></div>
+  return ( 
+    <div className=" mx-auto w-full flex items-center justify-center overflow-hidden relative">
+      <div className="whitespace-nowrap w-20 sm:w-28 md:w-40   transition-transform ease-in-out duration-700" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+        {logoNames.map((logoName, idx) => (
+          <div key={idx} className="inline-block">
+            <SkillsSVG logoName={logoName} className="w-20 h-20 sm:w-28 sm:h-28 md:w-40 md:h-40 "  />
+          </div>
         ))}
       </div>
     </div>
   );
-}
+};
+
+export default AutoSlider;
