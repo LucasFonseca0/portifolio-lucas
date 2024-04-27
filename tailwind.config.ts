@@ -24,7 +24,7 @@ const config: Config = {
         light: '#ffcccc', // cor vermelha clara
         dark: '#660000', // cor vermelha escura
         default: '#cc0000',// cor vermelha padrão
-        pastel:'#be2929',
+        pastel:'orange',
       },
       keyframes: {
         'fade-in-up': {

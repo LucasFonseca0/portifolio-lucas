@@ -1,5 +1,5 @@
 import TranslateAnimation from "@/app/animation/TranslateAnimation.animation";
-import AutoSlider from "@/app/components/skillsComponents/autoSlider";
+
 
 const Skills = () => {
   return (
@@ -27,7 +27,7 @@ const Skills = () => {
             </p>
           </div>
         </TranslateAnimation.TranslateRight>
-      <AutoSlider />
+  
           <TranslateAnimation.TranslateLeft>
         <div className="flex flex-row-reverse text-right " >
             <p className="w-[80%]  ">
