@@ -32,7 +32,7 @@ const Introduction = () => {
             </div>
         </header>
         <div className="relative flex flex-col flex-grow justify-center h-auto z-20 sm:pl-20 md:pl-20 xl:pl-40">
-          <article className="w-[70%] animate-fade-in-up  m-auto text-3xl md:text-4xl xl:text-6xl sm:m-0 [&>span]:text-secondary font-semibold">
+          <article className="w-[70%] animate-fade-in-up  m-auto text-3xl md:text-4xl xl:text-6xl sm:m-0 [&>span]:text-primaryDarkest font-semibold">
             <Trans i18nKey="intro" components={{ 1: <span  /> }} />
           </article>
           <div className=" flex text-md sm:text-2xl md:text-3xl gap-4 m-auto sm:m-0 mt-6 sm:mt-10 w-[70%]  ">
