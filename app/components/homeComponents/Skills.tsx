@@ -1,7 +1,10 @@
 import TranslateAnimation from "@/app/animation/TranslateAnimation.animation";
-
+import SkillsSVG from "@/app/SVGs/SkillsSVG";
 
 const Skills = () => {
+
+    const logoNames:LogoName[]=["typescript","docker","git","mongodb","nest","next","react","tailwind","database"]
+
   return (
     <section>
       <h2 className="text-2xl sm:text-3xl md:text-5xl  relative flex justify-center font-extrabold">
@@ -9,10 +12,11 @@ const Skills = () => {
         <span className="absolute  right-0 w-[100%]  h-1/2 -z-10 flex justify-center items-center  translate-y-[50%] ">
           <span className="h-1 w-full bg-secondary"></span>
         </span>
-       
-        <TranslateAnimation.TranslateUp>
 
-        <p  className="bg-white rounded-2xl p-2 sm:p-3 text-secondary ">SKILLS</p>
+        <TranslateAnimation.TranslateUp>
+          <p className="bg-white rounded-2xl p-2 sm:p-3 text-primaryDarkest ">
+            SKILLS
+          </p>
         </TranslateAnimation.TranslateUp>
       </h2>
       <div className="p-4 sm:p-6  md:p-8 w-full flex flex-col gap-4 sm:text-xl md:text-2xl overflow-hidden ">
@@ -28,9 +32,17 @@ const Skills = () => {
             </p>
           </div>
         </TranslateAnimation.TranslateRight>
-  
-          <TranslateAnimation.TranslateLeft>
-        <div className="flex flex-row-reverse text-right " >
+        <div className="flex gap-1 justify-center">
+          {
+            logoNames && logoNames.map((logoName:LogoName,index)=>(
+              <SkillsSVG key={index} logoName={logoName} className="w-16 h-16"/>
+          
+            ))
+          }
+        </div>
+
+        <TranslateAnimation.TranslateLeft>
+          <div className="flex flex-row-reverse text-right ">
             <p className="w-[80%]  ">
               Minha capacidade de comunicação é um diferencial, facilitando a
               colaboração eficaz em equipes multidisciplinares. Estou sempre
@@ -38,8 +50,8 @@ const Skills = () => {
               sobre as tendências do setor, garantindo que meu trabalho esteja
               sempre alinhado com as melhores práticas e soluções inovadoras.
             </p>
-        </div>
-          </TranslateAnimation.TranslateLeft>
+          </div>
+        </TranslateAnimation.TranslateLeft>
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ const Introduction = () => {
           <div className="flex items-center gap-3 ">
             <Avatar showFallback src="/images/photo.svg" className=" w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 text-large relative z-20" alt={t('name')} />
             <div className="relative z-20 text-sm sm:text-2xl md:text-4xl">
-              <h1 className="font-medium">{t('name')}</h1>
+              <h1 className="font-medium text-primaryDarkest">{t('name')}</h1>
               <h2 >{t('role')}</h2>
             </div>
           </div>
