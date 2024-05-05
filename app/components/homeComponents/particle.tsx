@@ -40,10 +40,10 @@ export function ParticleBackground() {
                             value: "#ff9933",
                         },
                         links: {
-                            color: "#ffcccc",
+                            color: "#ff9933",
                             distance: 175,
                             enable: true,
-                            opacity: 0.5,
+                            opacity: 0.6,
                             width: 1,
                             
                             
@@ -63,7 +63,7 @@ export function ParticleBackground() {
                                 
                             },
                             value: 2.5,
-                           limit:12,
+                           limit:9,
                            
                         },
                        
