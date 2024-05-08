@@ -24,7 +24,7 @@ const AboutMe = () => {
   const Dots = () => (
     <div className="grid grid-rows-2 grid-flow-col  gap-2  md:gap-3 lg:gap-4 absolute right-[15%] md:right-[15%] bottom-[-4%] sm:bottom-[-6%] md:bottom-[-7%] lg:bottom-[-13%] xl:bottom-[-6%] xl:right-[17%] 2xl:right-[25%]">
       {[...Array(2)].map((_, index) => (
-        <div className="flex gap-3  md:gap-4 lg:gap-6">
+        <div  key={index} className="flex gap-3  md:gap-4 lg:gap-6">
           {[...Array(6)].map((_, index) => (
             <div
               key={index}
