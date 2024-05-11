@@ -33,7 +33,7 @@ export function ParticleBackground() {
                             value: "primary",
                         }
                     },
-                    fpsLimit: 120,
+                    fpsLimit: 70,
                     particles: {
                         maxConnections: 1,
                         color: {

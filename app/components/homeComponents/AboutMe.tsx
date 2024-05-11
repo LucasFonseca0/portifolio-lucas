@@ -9,17 +9,7 @@ const responsiveAboutMeText =
   " text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl";
 
 const AboutMe = () => {
-  const logoNames: LogoName[] = [
-    "typescript",
-    "docker",
-    "git",
-    "mongodb",
-    "nest",
-    "next",
-    "react",
-    "tailwind",
-    "database",
-  ];
+  
 
   const Dots = () => (
     <div className="grid grid-rows-2 grid-flow-col  gap-2  md:gap-3 lg:gap-4 absolute right-[15%] md:right-[15%] bottom-[-4%] sm:bottom-[-6%] md:bottom-[-7%] lg:bottom-[-13%] xl:bottom-[-6%] xl:right-[17%] 2xl:right-[25%]">
