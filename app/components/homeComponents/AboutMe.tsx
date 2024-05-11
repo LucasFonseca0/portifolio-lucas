@@ -1,7 +1,4 @@
-import TranslateAnimation from "@/app/animation/TranslateAnimation.animation";
-import SkillsSVG from "@/app/SVGs/SkillsSVG";
 import Image from "next/image";
-import { ReactElement } from "react";
 
 const responsiveAboutMeBackground =
   " h-16 w-40 sm:h-20 sm:w-48 md:h-24 md:w-64 lg:h-28 lg:w-72 xl:h-30 xl:w-80 2xl:h-32 2xl:w-96";

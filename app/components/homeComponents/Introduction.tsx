@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react'
 import { ParticleBackground } from './particle'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa6'
