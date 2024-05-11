@@ -15,6 +15,8 @@ const Skills = () => {
     "mongodb",
   ];
 
+  
+
   return (
     <section className="relative text-black mt-40">
       <Image
@@ -48,8 +50,8 @@ const Skills = () => {
         />
         <div className="flex z-10 justify-center items-center sm:justify-start mt-20">
           <div className="grid grid-rows-2 grid-flow-col gap-3 w-80 sm:w-80 lg:w-auto  lg:gap-5">
-            {logoNames.map((data: LogoName) => (
-              <div className="flex flex-col items-center justify-center ">
+            {logoNames.map((data: LogoName,index:number) => (
+              <div key={index} className="flex flex-col items-center justify-center ">
                 <SkillsSVG
                   logoName={data}
                   className="w-8 h-8  sm:w-14 sm:h-14 lg:w-20 lg:h-20 "
