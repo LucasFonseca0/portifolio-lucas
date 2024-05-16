@@ -3,14 +3,11 @@
 import Image from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper";
-import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
-SwiperCore.use([Pagination]);
+
 
 const Projects = () => {
   const Dots = () => (
@@ -48,29 +45,48 @@ const Projects = () => {
         </div>
         <div className="w-[80%] relative">
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="z-50 top-1/2 -translate-y-1/2 h-60  [&>*>img]:block [&>*>img]:object-cover [&>*>img]:w-full [&>*>img]:text-secondary"
+            slidesPerView={2.5}
+            spaceBetween={15}
+            loop={true}
+            className="z-50 top-1/2 -translate-y-1/2 h-60  [&>*>img]:block [&>*>img]:object-cover  [&>*>img]:text-secondary"
           >
             <SwiperSlide >
               <div className="flex flex-col gap-4">
-                <Image alt="Project image" src={"/"} width={400} height={500} className="h-40  bg-primary"/>
+                <Image alt="Project image" src={"/"} width={400} height={500} className="h-40 w-full  bg-primary"/>
                   
                 <p className="font-semibold italic">Project Name</p>
               </div>
             </SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
+            <SwiperSlide >
+              <div className="flex flex-col gap-4">
+                <Image alt="Project image" src={"/"} width={400} height={500} className="h-40 w-full  bg-primary"/>
+                  
+                <p className="font-semibold italic">Project Name</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide >
+              <div className="flex flex-col gap-4">
+                <Image alt="Project image" src={"/"} width={400} height={500} className="h-40 w-full  bg-primary"/>
+                  
+                <p className="font-semibold italic">Project Name</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide >
+              <div className="flex flex-col gap-4">
+                <Image alt="Project image" src={"/"} width={400} height={500} className="h-40 w-full  bg-primary"/>
+                  
+                <p className="font-semibold italic">Project Name</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide >
+              <div className="flex flex-col gap-4">
+                <Image alt="Project image" src={"/"} width={400} height={500} className="h-40 w-full  bg-primary"/>
+                  
+                <p className="font-semibold italic">Project Name</p>
+              </div>
+            </SwiperSlide>
+          
+          
           </Swiper>
         </div>
       </div>
