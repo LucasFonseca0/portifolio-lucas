@@ -56,8 +56,8 @@ const Projects = () => {
           >
             
             {
-              projectList && projectList.map((data,index)=><SwiperSlide >
-              <div className="flex flex-col gap-4" key={index}>
+              projectList && projectList.map((data,index)=><SwiperSlide key={index}>
+              <div className="flex flex-col gap-4" >
                 {data.imageUrl.length > 0 && <Image alt="Project image" src={data.imageUrl} width={400} height={500} className="h-20 sm:h-28 md:h-36 lg:h-44 xl:h-52 2xl:h-72 3xl:h-80  w-full  bg-primary"/>}
                 {data.isInDevelopment && <div className="h-20 sm:h-28 md:h-36 lg:h-44 xl:h-52 2xl:h-72 3xl:h-80 bg-secondary flex items-center justify-center text-white text-[65%] sm:text-md md:text-lg lg:text-xl xl:text-2xl ">Is inDevelopment</div>}
                 <p className="font-semibold italic text-[65%] sm:text-md md:text-lg lg:text-xl xl:text-2xl">{data.title}</p>
