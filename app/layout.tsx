@@ -27,6 +27,7 @@ export default function RootLayout({
       <NextUIProvider>
           {children}
       </NextUIProvider>
+      <Analytics />
           </body>
     </html>
   );
