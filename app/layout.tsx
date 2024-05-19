@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import {Poppins } from "next/font/google";
 
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/next"
 import { NextUIProvider } from "@nextui-org/react";
 
 const poppins = Poppins({
