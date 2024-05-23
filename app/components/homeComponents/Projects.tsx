@@ -1,17 +1,16 @@
-"use client";
+"use client"
 
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import projectList from "@/app/utils/ProjectsList";
 
-
-
-
 const Projects = () => {
+  const [selectedId, setSelectedId] = useState<null | number>(null);
+
   const Dots = () => (
     <div className="grid grid-cols-2 w-10  gap-2  md:gap-3 lg:gap-4">
       {[...Array(2)].map((_, index) => (
@@ -27,10 +26,8 @@ const Projects = () => {
     </div>
   );
 
-
-
   return (
-    <section className="h-[100vh] relative text-black mt-28 sm:mt-40 md:mt-60 xl:mt-80">
+    <section className={`h-[100vh] relative text-black mt-28 sm:mt-40 md:mt-60 xl:mt-80 ${selectedId !== null ? 'pointer-events-none' : ''}`}>
       <div className="flex flex-row-reverse items-center  justify-center sm:justify-start sm:m-0 gap-6 sm:gap-8 sm:mr-[20%] md:mr-[20%] lg:mr-[20%] xl:mr-[23%] 2xl:mr-[26%]">
         <h2 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  font-bold z-10">
           Projects
@@ -54,19 +51,82 @@ const Projects = () => {
             loop={true}
             className="z-50 top-1/2 -translate-y-1/2 h-auto  [&>*>img]:block [&>*>img]:object-cover  [&>*>img]:text-secondary"
           >
-            
-            {
-              projectList && projectList.map((data,index)=><SwiperSlide key={index}>
-              <div className="flex flex-col gap-4" >
-                {data.imageUrl.length > 0 && <Image alt="Project image" src={data.imageUrl} width={400} height={500} className="h-20 sm:h-28 md:h-36 lg:h-44 xl:h-52 2xl:h-72 3xl:h-80  w-full  bg-primary"/>}
-                {data.isInDevelopment && <div className="h-20 sm:h-28 md:h-36 lg:h-44 xl:h-52 2xl:h-72 3xl:h-80 bg-secondary flex items-center justify-center text-white text-[65%] sm:text-md md:text-lg lg:text-xl xl:text-2xl ">Is in Development</div>}
-                <p className="font-semibold  text-[65%] sm:text-md md:text-lg lg:text-xl xl:text-2xl">{data.title}</p>
-              </div>
-            </SwiperSlide>)
-            }
-          
-          
+            {projectList &&
+              projectList.map((data, index) => (
+                <SwiperSlide key={index} onClick={() => setSelectedId(index)}>
+                  <motion.div
+                    layoutId={`card-${index}`}
+                    className="flex flex-col gap-4"
+                  >
+                    {data.imageUrl.length > 0 && (
+                      <motion.div layoutId={`image-${index}`}>
+                      <Image alt="Project image" src={data.imageUrl} width={400} height={500} className="h-20 sm:h-28 md:h-36 lg:h-44 xl:h-52 2xl:h-72 3xl:h-80  w-full  bg-primary"/>
+                    </motion.div>
+                    )}
+                    {data.isInDevelopment && (
+                      <div className="h-20 sm:h-28 md:h-36 lg:h-44 xl:h-52 2xl:h-72 3xl:h-80 bg-secondary flex items-center justify-center text-white text-[65%] sm:text-md md:text-lg lg:text-xl xl:text-2xl ">
+                        Is in Development
+                      </div>
+                    )}
+                    <p className="font-semibold  text-[65%] sm:text-md md:text-lg lg:text-xl xl:text-2xl">
+                      {data.title}
+                    </p>
+                  </motion.div>
+                </SwiperSlide>
+              ))}
           </Swiper>
+
+          <AnimatePresence>
+            {selectedId !== null && (
+              <motion.div
+                layoutId={`card-${selectedId}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 flex items-center justify-center z-50 pointer-events-auto"
+                onClick={() => setSelectedId(null)}
+              >
+                <motion.div
+                  className="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/2"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {projectList[selectedId].imageUrl.length > 0 && (
+                    <motion.div layoutId={`image-${selectedId}`}>
+                    <Image alt="Project image" src={projectList[selectedId].imageUrl} width={400} height={500} className="h-auto  w-full  bg-primary"/>
+                  </motion.div>
+                  )}
+                  <motion.h5 className="text-lg font-bold">
+                    {projectList[selectedId].title}
+                  </motion.h5>
+                  <motion.p className="mt-4">
+                    {projectList[selectedId].description}
+                  </motion.p>
+                  <motion.a
+                  target="_blank"
+                    href={projectList[selectedId].link}
+                    className="underline text-blue-500 mt-4 block"
+                  >
+                    Project Link
+                  </motion.a>
+                  <motion.p className="mt-4">
+                    Technologies:{" "}
+                    {projectList[selectedId].tecnologies.join(", ")}
+                  </motion.p>
+                  <motion.p className="mt-4">
+                    {projectList[selectedId].isInDevelopment
+                      ? "In Development"
+                      : "Completed"}
+                  </motion.p>
+                  <motion.button
+                    className="mt-8 px-4 py-2 bg-blue-500 text-white rounded"
+                    onClick={() => setSelectedId(null)}
+                  >
+                    Close
+                  </motion.button>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>
