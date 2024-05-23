@@ -26,7 +26,7 @@ const projectList:ProjectsInterface[] = [
     {
         title:"DotNetLibrary RestfulAPI",
         description:"WebAPI8 is a .NET web application that provides RESTful APIs for managing authors and books. It allows users to perform CRUD operations on authors and books, as well as retrieve a list of authors and books.",
-        imageUrl:"/projectImages/DotNetLibrary-RestfulAPI-SQL-server.jpeg",
+        imageUrl:"/projectImages/DotNetLibrary-RestfulAPI-SQL-server.svg",
         link:"https://github.com/LucasFonseca0/DotNetLibrary-RestfulAPI-SQL-server",
         tecnologies: ["C#", "APS.net8", "Entity Framework", "SQL server"],
         isInDevelopment:false
