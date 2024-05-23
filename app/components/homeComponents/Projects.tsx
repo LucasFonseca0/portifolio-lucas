@@ -62,7 +62,7 @@ const Projects = () => {
                           src={data.imageUrl}
                           layout="fill"
                           objectFit="cover"
-                          className=" w-full h-full bg-primary"
+                          className="w-full h-full bg-primary"
                         />
                       </motion.div>
                     ) : (
@@ -91,45 +91,47 @@ const Projects = () => {
                 onClick={() => setSelectedId(null)}
               >
                 <motion.div
-                  className="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/2"
+                  className="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 max-h-full overflow-auto"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  {projectList[selectedId].imageUrl.length > 0 && (
-                    <motion.div layoutId={`image-${selectedId}`} className="relative" style={{ paddingTop: '80%' }}>
-                      <Image
-                        alt="Project image"
-                        src={projectList[selectedId].imageUrl}
-                        layout="fill"
-                        objectFit="cover"
-                        className="absolute top-0 left-0 w-full h-full bg-primary"
-                      />
-                    </motion.div>
-                  )}
-                  <motion.h5 className="text-lg font-bold">
-                    {projectList[selectedId].title}
-                  </motion.h5>
-                  <motion.p className="mt-4">
-                    {projectList[selectedId].description}
-                  </motion.p>
-                  <motion.a
-                    target="_blank"
-                    href={projectList[selectedId].link}
-                    className="underline text-blue-500 mt-4 block"
-                  >
-                    Project Link
-                  </motion.a>
-                  <motion.p className="mt-4">
-                    Technologies: {projectList[selectedId].tecnologies.join(", ")}
-                  </motion.p>
-                  <motion.p className="mt-4">
-                    {projectList[selectedId].isInDevelopment ? "In Development" : "Completed"}
-                  </motion.p>
-                  <motion.button
-                    className="mt-8 px-4 py-2 bg-blue-500 text-white rounded"
-                    onClick={() => setSelectedId(null)}
-                  >
-                    Close
-                  </motion.button>
+                  <div className="relative">
+                    {projectList[selectedId].imageUrl.length > 0 && (
+                      <motion.div layoutId={`image-${selectedId}`} className="relative" style={{ paddingTop: '80%' }}>
+                        <Image
+                          alt="Project image"
+                          src={projectList[selectedId].imageUrl}
+                          layout="fill"
+                          objectFit="cover"
+                          className="absolute top-0 left-0 w-full h-full bg-primary"
+                        />
+                      </motion.div>
+                    )}
+                    <motion.h5 className="text-lg font-bold mt-4">
+                      {projectList[selectedId].title}
+                    </motion.h5>
+                    <motion.p className="mt-4">
+                      {projectList[selectedId].description}
+                    </motion.p>
+                    <motion.a
+                      target="_blank"
+                      href={projectList[selectedId].link}
+                      className="underline text-blue-500 mt-4 block"
+                    >
+                      Project Link
+                    </motion.a>
+                    <motion.p className="mt-4">
+                      Technologies: {projectList[selectedId].tecnologies.join(", ")}
+                    </motion.p>
+                    <motion.p className="mt-4">
+                      {projectList[selectedId].isInDevelopment ? "In Development" : "Completed"}
+                    </motion.p>
+                    <motion.button
+                      className="mt-8 px-4 py-2 bg-blue-500 text-white rounded"
+                      onClick={() => setSelectedId(null)}
+                    >
+                      Close
+                    </motion.button>
+                  </div>
                 </motion.div>
               </motion.div>
             )}
