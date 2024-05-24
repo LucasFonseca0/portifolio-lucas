@@ -115,7 +115,7 @@ const Projects = () => {
                       <motion.div
                         layoutId={`image-${selectedId}`}
                         className="relative pt-[80%]"
-                    
+
                       >
                         <Image
                           alt="Project image"
@@ -137,7 +137,7 @@ const Projects = () => {
                       {projectList[selectedId].tecnologies.join(", ")}
                     </motion.p>
                     {projectList[selectedId].isInDevelopment && (
-                      <motion.p className="mt-4">"In Development"</motion.p>
+                      <motion.p className="mt-4">&quot;In Development&quot;</motion.p>
                     )}
                     <motion.div className="flex justify-end gap-4">
                       <motion.button
