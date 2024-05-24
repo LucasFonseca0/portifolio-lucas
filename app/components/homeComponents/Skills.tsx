@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const Skills = () => {
   const logoNames: LogoName[] = [
-    "tailwind",
-    "database",
-    "next",
-    "nest",
     "typescript",
-    "nodeJS",
+    "next",
+    "c#",
     "react",
+    ".net",
+    "database",
+    "nodeJS",
     "docker",
+    "nest",
     "git",
-    "mongodb",
   ];
 
   

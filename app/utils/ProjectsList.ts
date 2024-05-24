@@ -8,16 +8,16 @@ const projectList:ProjectsInterface[] = [
         isInDevelopment:false
     },
     {
-        title:"AuthSystem RefreshJWTtoken",
+        title:"Fully AuthSystem RefreshJWTtoken",
         description:"AuthSystem-RefreshJWTtoken-GoogleAuth-EmailVerification is a fullstack project that provides a robust authentication system. The backend is built with NestJS and the frontend with Next.js. The system includes JWT authentication with refresh tokens, authentication via Google, and email verification.",
         imageUrl:"/projectImages/yummi.png",
         link:"https://github.com/LucasFonseca0/AuthSystem-RefreshJWTtoken-GoogleAuth-EmailVerification",
-        tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Zod","NextAuth","nodeMailer"],
+        tecnologies: ["NestJS","graphQL","MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Zod","NextAuth","nodeMailer"],
         isInDevelopment:false
     },
     {
-        title:"inventory-management-app",
-        description:"This is the inventory management app. The aim of this app is to provide inventory manager that anyone can use with ease. It is especially geared towards small businesses.",
+        title:"Inventory management app",
+        description:"This is the Inventory management app. The aim of this app is to provide inventory manager that anyone can use with ease. It is especially geared towards small businesses.",
         imageUrl:"/projectImages/StockManager.png",
         link:"https://github.com/LucasFonseca0/inventory-management-app",
         tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "bootstrap CSS", "Zod"],
