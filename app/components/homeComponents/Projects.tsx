@@ -28,7 +28,7 @@ const Projects = () => {
 
   return (
     <section
-      className={`h-[100vh] relative text-black mt-28 sm:mt-40 md:mt-60 xl:mt-80 ${
+      className={`relative text-black mt-28 sm:mt-40 md:mt-60 xl:mt-80 ${
         selectedId !== null ? "pointer-events-none" : ""
       }`}
     >
