@@ -13,11 +13,11 @@ const Projects = () => {
 
   const Dots = () => (
     <div className="grid grid-cols-2 w-10 gap-2 md:gap-3 lg:gap-4">
-      {[...Array(2)].map((_, index) => (
-        <div key={index} className="flex flex-col gap-3 md:gap-4 lg:gap-6">
-          {[...Array(6)].map((_, index) => (
+      {[...Array(2)].map((_, colIndex) => (
+        <div key={colIndex} className="flex flex-col gap-3 md:gap-4 lg:gap-6">
+          {[...Array(6)].map((_, rowIndex) => (
             <div
-              key={index}
+              key={rowIndex}
               className="w-1 h-1 md:w-[6px] md:h-[6px] lg:w-2 lg:h-2 bg-primaryDarkest rounded-full opacity-60"
             ></div>
           ))}
@@ -37,7 +37,7 @@ const Projects = () => {
           Projects
         </h2>
         <Image
-          src={"/images/arrow.svg"}
+          src="/images/arrow.svg"
           alt="arrow"
           height={100}
           width={100}
@@ -58,7 +58,7 @@ const Projects = () => {
                 slidesPerView: 2.5,
               },
             }}
-            className="z-50 top-1/2 -translate-y-1/2 h-auto [&>*>img]:block [&>*>img]:object-cover [&>*>img]:text-secondary"
+            className="z-50 top-1/2 -translate-y-1/2 h-auto"
           >
             {projectList &&
               projectList.map((data, index) => (
@@ -73,8 +73,8 @@ const Projects = () => {
                         <Image
                           alt="Project image"
                           src={data.imageUrl}
-                          layout="fill"
-                          objectFit="cover"
+                          fill
+                          style={{ objectFit: "cover" }}
                           className="w-full h-full bg-primary"
                         />
                       </motion.div>
@@ -107,39 +107,38 @@ const Projects = () => {
                 onClick={() => setSelectedId(null)}
               >
                 <motion.div
-                  className="bg-white p-8 rounded-lg shadow-lg w-11/12 sm:w-[70%] md:w-1/2 lg:md-[40%] max-h-full overflow-auto"
+                  className="bg-white p-8 rounded-lg shadow-lg w-11/12 sm:w-[70%] md:w-1/2 lg:w-[40%] max-h-full overflow-auto"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <div className="relative">
-                    {projectList[selectedId].imageUrl.length > 0 && (
+                    {projectList[selectedId]?.imageUrl.length > 0 && (
                       <motion.div
                         layoutId={`image-${selectedId}`}
                         className="relative pt-[80%]"
-                    
                       >
                         <Image
                           alt="Project image"
                           src={projectList[selectedId].imageUrl}
-                          layout="fill"
-                          objectFit="cover"
+                          fill
+                          style={{ objectFit: "cover" }}
                           className="absolute top-0 left-0 w-full h-auto bg-primary"
                         />
                       </motion.div>
                     )}
                     <motion.h5 className="text-lg font-bold mt-4">
-                      {projectList[selectedId].title}
+                      {projectList[selectedId]?.title}
                     </motion.h5>
                     <motion.p className="mt-4">
-                      {projectList[selectedId].description}
+                      {projectList[selectedId]?.description}
                     </motion.p>
                     <motion.p className="mt-4">
-                      <motion.span className="font-bold">Technologies:</motion.span>{" "}
-                      {projectList[selectedId].tecnologies.join(", ")}
+                      <span className="font-bold">Technologies:</span>{" "}
+                      {projectList[selectedId]?.tecnologies.join(", ")}
                     </motion.p>
-                    {projectList[selectedId].isInDevelopment && (
+                    {projectList[selectedId]?.isInDevelopment && (
                       <motion.p className="mt-4">"In Development"</motion.p>
                     )}
-                    <motion.div className="flex justify-end gap-4">
+                    <div className="flex justify-end gap-4">
                       <motion.button
                         className="mt-8 px-4 py-2 bg-secondary text-white rounded-full"
                         onClick={() => setSelectedId(null)}
@@ -148,12 +147,12 @@ const Projects = () => {
                       </motion.button>
                       <motion.a
                         target="_blank"
-                        href={projectList[selectedId].link}
+                        href={projectList[selectedId]?.link}
                         className="mt-8 px-4 py-2 bg-primaryDark text-white font-bold rounded-full"
                       >
                         Project Link
                       </motion.a>
-                    </motion.div>
+                    </div>
                   </div>
                 </motion.div>
               </motion.div>
