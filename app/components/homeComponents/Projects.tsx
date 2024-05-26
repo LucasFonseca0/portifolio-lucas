@@ -28,7 +28,7 @@ const Projects = () => {
 
   return (
     <section
-      className={` relative text-black mt-28 sm:mt-40 md:mt-60 xl:mt-80 ${
+      className={`h-[100vh] relative text-black mt-28 sm:mt-40 md:mt-60 xl:mt-80 ${
         selectedId !== null ? "pointer-events-none" : ""
       }`}
     >
@@ -115,7 +115,7 @@ const Projects = () => {
                       <motion.div
                         layoutId={`image-${selectedId}`}
                         className="relative pt-[80%]"
-
+                    
                       >
                         <Image
                           alt="Project image"
@@ -137,7 +137,7 @@ const Projects = () => {
                       {projectList[selectedId].tecnologies.join(", ")}
                     </motion.p>
                     {projectList[selectedId].isInDevelopment && (
-                      <motion.p className="mt-4">&quot;In Development&quot;</motion.p>
+                      <motion.p className="mt-4">"In Development"</motion.p>
                     )}
                     <motion.div className="flex justify-end gap-4">
                       <motion.button
