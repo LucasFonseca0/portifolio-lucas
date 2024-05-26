@@ -136,7 +136,7 @@ const Projects = () => {
                       {projectList[selectedId]?.tecnologies.join(", ")}
                     </motion.p>
                     {projectList[selectedId]?.isInDevelopment && (
-                      <motion.p className="mt-4">"In Development"</motion.p>
+                      <motion.p className="mt-4">{'In Development'}</motion.p>
                     )}
                     <div className="flex justify-end gap-4">
                       <motion.button

@@ -7,7 +7,7 @@ const WhatPeopleThinkAboutMe = () => {
       <h2 className="flex justify-center items-center  text-3xl sm:text-3xl md:text-4xl lg:text-5xl  font-bold z-10">
         What people think about me?
       </h2>
-      <div className="flex flex-col w-[50%] mt-10 ml-[10%]">
+      <div className="flex flex-col w-[50%] mt-10 ml-[10%]" key={20}>
         <div className="flex items-center gap-2">
           <Avatar
             showFallback
