@@ -4,6 +4,7 @@ import {Poppins } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next"
 import { NextUIProvider } from "@nextui-org/react";
+import Head from "next/head";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,6 +15,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Lucas Portfolio",
   description: "Lucas Portfolio",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -23,6 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      
         <body className={`${poppins.className} bg-black text-white`}>
       <NextUIProvider>
           {children}
