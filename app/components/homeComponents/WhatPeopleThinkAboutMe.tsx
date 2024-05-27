@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Avatar } from "@nextui-org/react";
 import React from "react";
 import { useTranslation, Trans } from "react-i18next";
@@ -18,12 +18,12 @@ const WhatPeopleThinkAboutMe = () => {
             src="https://media.licdn.com/dms/image/D4D03AQGjA3jGx6U-Sw/profile-displayphoto-shrink_200_200/0/1712836047078?e=1722470400&v=beta&t=In6LzI9CzwbbcZ8e35_J7ycPkiT-NktLMltIveghc-4"
             className="h-[15%] sm:w-16 sm:h-16 md:w-20 md:h-20 text-large relative z-20"
           />
-          <h3 className="text-lg sm:text-xl md:text-2xl  lg:text-3xl font-semibold">
-            <Trans i18nKey="leo_souza" components={[<span className="text-secondary" />]} />
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
+            <Trans i18nKey="leo_souza" components={[<span className="text-secondary" key="1" />]} />
           </h3>
         </div>
-        <p className="text-md sm:text-lg md:text-xl  lg:text-2xl text-center sm:text-left mt-4">
-          <Trans i18nKey="review_leo" components={[<span className="text-primary font-semibold" />]} />
+        <p className="text-md sm:text-lg md:text-xl lg:text-2xl text-center sm:text-left mt-4">
+          <Trans i18nKey="review_leo" components={[<span className="text-primary font-semibold" key="2" />]} />
         </p>
       </div>
       <div className="flex flex-col items-center justify-center p-8 sm:p-0 sm:items-end w-full mt-10 lg:mt-14 sm:pr-[10%] direction-rtl text-right">
@@ -34,11 +34,11 @@ const WhatPeopleThinkAboutMe = () => {
             className="h-[15%] sm:w-16 sm:h-16 md:w-20 md:h-20 text-large relative z-20"
           />
           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
-            <Trans i18nKey="mozart_soares" components={[<span className="text-secondary" />]} />
+            <Trans i18nKey="mozart_soares" components={[<span className="text-secondary" key="3" />]} />
           </h3>
         </div>
-        <p className="text-md sm:w-[65%]  lg:w-[55%] sm:text-lg md:text-xl lg:text-2xl text-center sm:text-right mt-4">
-          <Trans i18nKey="review_mozart" components={[<span className="text-primary font-semibold" />]} />
+        <p className="text-md sm:w-[65%] lg:w-[55%] sm:text-lg md:text-xl lg:text-2xl text-center sm:text-right mt-4">
+          <Trans i18nKey="review_mozart" components={[<span className="text-primary font-semibold" key="4" />]} />
         </p>
       </div>
       <div className="flex flex-col items-center justify-center p-8 sm:p-0 sm:items-start w-full sm:w-[65%] lg:w-[55%] mt-10 lg:mt-14 sm:ml-[10%]">
@@ -49,11 +49,11 @@ const WhatPeopleThinkAboutMe = () => {
             className="h-[15%] sm:w-16 sm:h-16 md:w-20 md:h-20 text-large relative z-20"
           />
           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
-            <Trans i18nKey="calvin_soares" components={[<span className="text-secondary" />]} />
+            <Trans i18nKey="calvin_soares" components={[<span className="text-secondary" key="5" />]} />
           </h3>
         </div>
         <p className="text-md sm:text-lg md:text-xl lg:text-2xl text-center sm:text-left mt-4">
-          <Trans i18nKey="review_calvin" components={[<span className="text-primary font-semibold" />]} />
+          <Trans i18nKey="review_calvin" components={[<span className="text-primary font-semibold" key="6" />]} />
         </p>
       </div>
     </section>
