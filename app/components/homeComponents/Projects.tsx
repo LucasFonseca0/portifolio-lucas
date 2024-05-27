@@ -6,9 +6,54 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import projectList from "@/app/utils/ProjectsList";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+const { t } = useTranslation(); 
+
+
+  const projectList: ProjectsInterface[] = [
+    {
+        title: t('hotelHopper_title'),
+        description: t('hotelHopper_description'),
+        imageUrl: "/projectImages/hotelHopper.png",
+        link: "https://github.com/LucasFonseca0/HotelHopper",
+        tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Next UI", "Zod"],
+        isInDevelopment: false
+    },
+    {
+        title: t('authSystem_title'),
+        description: t('authSystem_description'),
+        imageUrl: "/projectImages/yummi.png",
+        link: "https://github.com/LucasFonseca0/AuthSystem-RefreshJWTtoken-GoogleAuth-EmailVerification",
+        tecnologies: ["NestJS", "graphQL", "MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Zod", "NextAuth", "nodeMailer"],
+        isInDevelopment: false
+    },
+    {
+        title: t('inventoryApp_title'),
+        description: t('inventoryApp_description'),
+        imageUrl: "/projectImages/StockManager.png",
+        link: "https://github.com/LucasFonseca0/inventory-management-app",
+        tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "bootstrap CSS", "Zod"],
+        isInDevelopment: false
+    },
+    {
+        title: t('dotNetLibrary_title'),
+        description: t('dotNetLibrary_description'),
+        imageUrl: "/projectImages/DotNetLibrary-RestfulAPI-SQL-server.svg",
+        link: "https://github.com/LucasFonseca0/DotNetLibrary-RestfulAPI-SQL-server",
+        tecnologies: ["C#", "APS.net8", "Entity Framework", "SQL server"],
+        isInDevelopment: false
+    },
+    {
+        title: t('consoleJob_title'),
+        description: t('consoleJob_description'),
+        imageUrl: "",
+        link: "https://github.com/Marcos9868/devjobsbackend",
+        tecnologies: ["C#", "APS.net8", "Entity Framework", "Postgresql", "Angular 17"],
+        isInDevelopment: true
+    },
+]
   const [selectedId, setSelectedId] = useState<null | number>(null);
 
   const Dots = () => (

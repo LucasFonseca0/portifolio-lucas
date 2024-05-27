@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import { useTranslation, Trans } from 'react-i18next';
 
 const responsiveAboutMeBackground =
   " h-16 w-40 sm:h-20 sm:w-48 md:h-24 md:w-64 lg:h-28 lg:w-72 xl:h-30 xl:w-80 2xl:h-32 2xl:w-96";
@@ -6,12 +9,12 @@ const responsiveAboutMeText =
   " text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl";
 
 const AboutMe = () => {
-  
+  const { t } = useTranslation();
 
   const Dots = () => (
     <div className="grid grid-rows-2 grid-flow-col  gap-2  md:gap-3 lg:gap-4 absolute right-[15%] md:right-[15%] bottom-[-4%] sm:bottom-[-6%] md:bottom-[-7%] lg:bottom-[-13%] xl:bottom-[-6%] xl:right-[17%] 2xl:right-[25%]">
       {[...Array(2)].map((_, index) => (
-        <div  key={index} className="flex gap-3  md:gap-4 lg:gap-6">
+        <div key={index} className="flex gap-3  md:gap-4 lg:gap-6">
           {[...Array(6)].map((_, index) => (
             <div
               key={index}
@@ -29,7 +32,7 @@ const AboutMe = () => {
         <h2
           className={`absolute top-[100%] ${responsiveAboutMeBackground} ${responsiveAboutMeText} -translate-y-1/2 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-[15%]  rounded-b-[60px] rounded-t-[20px] bg-black flex justify-center items-center  text-primaryDarkest font-bold `}
         >
-          About me
+          {t('about_me')}
         </h2>
       </div>
       <Image
@@ -52,19 +55,7 @@ const AboutMe = () => {
           }
         ></Image>
         <p className="[&>span]:text-secondary z-10  w-[80%] mt-6 sm:mt-0 font-bold text-base md:text-sm sm:text-xs lg:text-lg 2xl:text-2xl sm:w-[40%] sm:ml-[10%]">
-          Sou um desenvolvedor <span>Fullstack</span> com especialização em{" "}
-          <span>NextJs</span> no frontend e <span>NestJs</span> no backend.
-          Utilizo Tailwind CSS para garantir interfaces elegantes e Docker para
-          ambientes consistentes.
-          <br />
-          <br />
-          Minha experiência abrange bancos de dados <span>SQL</span> e{" "}
-          <span>NoSQL</span>, utilizando ORMs como Mongoose e Prisma. Sou
-          proficiente em{" "}
-          <span>
-            <span className="text-primaryDarkest">Git</span>
-          </span>{" "}
-          e GitHub para controle de versão colaborativo.
+          <Trans i18nKey="about_me_text" components={{ 1: <span />, 2: <br />,3:<span className="text-primaryDarkest"/> }} />
         </p>
         <Dots />
       </div>
