@@ -52,17 +52,17 @@ const AboutMe = () => {
         ></Image>
    
       <div className="pt-[11vh] sm:pl-[15%] relative flex flex-col sm:flex-row text-black items-center ">
-        <TranslateAnimation.TranslateRight>
+  
           <Image
             src={"/images/photo2.svg"}
             alt="lucas image"
             width={427}
             height={427}
             className={
-              "z-10 w-[75%] m-auto max-w-96 sm:w-48 md:w-64 lg:w-72 xl:w-80 2xl:w-96"
+              "z-50 w-[75%] overflow-visible  m-auto max-w-96 sm:w-48 md:w-64 lg:w-72 xl:w-80 2xl:w-96"
             }
           ></Image>
-        </TranslateAnimation.TranslateRight>
+        
         <TranslateAnimation.TranslateLeft>
           <div className="[&>span]:text-secondary m-auto z-10  w-[80%] mt-6 sm:mt-0 font-bold text-base md:text-sm sm:text-xs lg:text-lg 2xl:text-2xl sm:w-[40%] sm:ml-[10%]">
             <Trans i18nKey="about_me_text" components={{ 1: <span />, 2: <br />,3:<span className="text-primaryDarkest"/> }} />
