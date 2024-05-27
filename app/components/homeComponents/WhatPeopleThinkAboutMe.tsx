@@ -41,9 +41,9 @@ const WhatPeopleThinkAboutMe = () => {
           </h3>
         </div>
           <div className="text-md sm:w-[65%] lg:w-[55%] sm:text-lg md:text-xl lg:text-2xl text-center sm:text-right mt-4">
-        <TranslateAnimation.TranslateRight>
+        <TranslateAnimation.TranslateLeft>
             <Trans i18nKey="review_mozart" components={[<span className="text-primary font-semibold" key="4" />]} />
-        </TranslateAnimation.TranslateRight>
+        </TranslateAnimation.TranslateLeft>
           </div>
       </div>
       <div className="flex flex-col items-center justify-center p-8 sm:p-0 sm:items-start w-full sm:w-[65%] lg:w-[55%] mt-10 lg:mt-14 sm:ml-[10%]">
@@ -57,11 +57,11 @@ const WhatPeopleThinkAboutMe = () => {
             <Trans i18nKey="calvin_soares" components={[<span className="text-secondary" key="5" />]} />
           </h3>
         </div>
-        <TranslateAnimation.TranslateLeft>
+        <TranslateAnimation.TranslateRight>
           <p className="text-md sm:text-lg md:text-xl lg:text-2xl text-center sm:text-left mt-4">
             <Trans i18nKey="review_calvin" components={[<span className="text-primary font-semibold" key="6" />]} />
           </p>
-        </TranslateAnimation.TranslateLeft>
+        </TranslateAnimation.TranslateRight>
       </div>
     </section>
   );
