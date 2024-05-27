@@ -1,5 +1,6 @@
 "use client"
 
+import TranslateAnimation from "@/app/animation/TranslateAnimation.animation";
 import Image from "next/image";
 import { useTranslation, Trans } from 'react-i18next';
 
@@ -29,34 +30,42 @@ const AboutMe = () => {
   return (
     <section className="relative">
       <div className="w-full h-[11vh] relative bg-primary rounded-ee-[100px]">
-        <h2
-          className={`absolute top-[100%] ${responsiveAboutMeBackground} ${responsiveAboutMeText} -translate-y-1/2 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-[15%]  rounded-b-[60px] rounded-t-[20px] bg-black flex justify-center items-center  text-primaryDarkest font-bold `}
-        >
-          {t('about_me')}
-        </h2>
+
+          <h2
+            className={`absolute top-[100%] ${responsiveAboutMeBackground} ${responsiveAboutMeText} -translate-y-1/2 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-[15%]  rounded-b-[60px] rounded-t-[20px] bg-black flex justify-center items-center  text-primaryDarkest font-bold `}
+          >
+            {t('about_me')}
+          </h2>
+    
       </div>
-      <Image
-        src={"/images/orangeCircle.svg"}
-        alt="orange circle"
-        width={77}
-        height={77}
-        className={
-          " absolute right-0 z-0 w-10 top-[14%] sm:w-12 md:w-16 sm:top-[18%] xl:w-20 xl:top-[20%]"
-        }
-      ></Image>
-      <div className="pt-[11vh] sm:pl-[15%] relative flex flex-col sm:flex-row text-black items-center ">
+     
         <Image
-          src={"/images/photo2.svg"}
-          alt="lucas image"
-          width={427}
-          height={427}
+          src={"/images/orangeCircle.svg"}
+          alt="orange circle"
+          width={77}
+          height={77}
           className={
-            "z-10 w-[75%] max-w-96 sm:w-48 md:w-64 lg:w-72 xl:w-80 2xl:w-96"
+            " absolute right-0 z-0 w-10 top-[14%] sm:w-12 md:w-16 sm:top-[18%] xl:w-20 xl:top-[20%]"
           }
         ></Image>
-        <p className="[&>span]:text-secondary z-10  w-[80%] mt-6 sm:mt-0 font-bold text-base md:text-sm sm:text-xs lg:text-lg 2xl:text-2xl sm:w-[40%] sm:ml-[10%]">
-          <Trans i18nKey="about_me_text" components={{ 1: <span />, 2: <br />,3:<span className="text-primaryDarkest"/> }} />
-        </p>
+   
+      <div className="pt-[11vh] sm:pl-[15%] relative flex flex-col sm:flex-row text-black items-center ">
+        <TranslateAnimation.TranslateRight>
+          <Image
+            src={"/images/photo2.svg"}
+            alt="lucas image"
+            width={427}
+            height={427}
+            className={
+              "z-10 w-[75%] max-w-96 sm:w-48 md:w-64 lg:w-72 xl:w-80 2xl:w-96"
+            }
+          ></Image>
+        </TranslateAnimation.TranslateRight>
+        <TranslateAnimation.TranslateLeft>
+          <p className="[&>span]:text-secondary z-10  w-[80%] mt-6 sm:mt-0 font-bold text-base md:text-sm sm:text-xs lg:text-lg 2xl:text-2xl sm:w-[40%] sm:ml-[10%]">
+            <Trans i18nKey="about_me_text" components={{ 1: <span />, 2: <br />,3:<span className="text-primaryDarkest"/> }} />
+          </p>
+        </TranslateAnimation.TranslateLeft>
         <Dots />
       </div>
     </section>

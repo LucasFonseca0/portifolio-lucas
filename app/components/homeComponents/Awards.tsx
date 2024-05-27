@@ -14,10 +14,14 @@ const Awards = () => {
   ];
 
   return (
-    <div className='h-auto mt-10 md:mt-20 lg:mt-24 text-black w-full flex flex-col items-center justify-center p-4 sm:p-8'>
-      <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold mb-10'>
-        {t('awards')}
-      </h1>
+    <section className='h-auto mt-10 md:mt-20 lg:mt-24 text-black w-full flex flex-col items-center justify-center p-4 sm:p-8'>
+      <div className='relative w-full flex items-center mb-10'>
+        <hr className='flex-grow border-primaryDark' />
+        <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold mx-4'>
+          {t('awards')}
+        </h2>
+        <hr className='flex-grow border-primaryDark' />
+      </div>
       <div className='relative flex flex-col items-center'>
         {awards.map((award, index) => (
           <div key={index} className='flex flex-col items-center'>
@@ -30,7 +34,7 @@ const Awards = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,3 +1,6 @@
+"use client"
+
+import TranslateAnimation from "@/app/animation/TranslateAnimation.animation";
 import SkillsSVG from "@/app/SVGs/SkillsSVG";
 import Image from "next/image";
 
@@ -33,13 +36,15 @@ const Skills = () => {
           <h2 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  font-bold z-10">
             Skills
           </h2>
-          <Image
-            src={"/images/arrow.svg"}
-            alt="arrow"
-            height={100}
-            width={100}
-            className="w-40 lg:w-52 xl:w-64 z-10"
-          />
+          <TranslateAnimation.TranslateLeft>
+            <Image
+              src={"/images/arrow.svg"}
+              alt="arrow"
+              height={100}
+              width={100}
+              className="w-40 lg:w-52 xl:w-64 z-10"
+            />
+          </TranslateAnimation.TranslateLeft>
         </div>
         <Image
           src={"/images/skillsBackgroundLines.svg"}

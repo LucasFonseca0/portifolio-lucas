@@ -15,7 +15,7 @@ const TranslateAnimation = {
           style={{
               transform: isInView ? "none" : `translateX(-100px)`,
               opacity: isInView ? 1 : 0,
-              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+              transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
             >
           {children}
@@ -35,7 +35,7 @@ TranslateLeft: ({ children }:{children:ReactNode}) => {
           style={{
             transform: isInView ? "none" : `translateX(${elementWidth / 2}px)`,
             opacity: isInView ? 1 : 0,
-            transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
           className="block"
         >

@@ -87,6 +87,7 @@ i18n
           "award_3": "2019 – <span>Medalha de bronze</span> na OBMEP (Olimpíada Brasileira de Matemática). 📊",
           "award_4": "2019 - <span>Medalha de bronze</span> na OBA (Olimpíada Brasileira de Astronomia). 🚀",
           "award_5": "2017 - <span>Medalha de bronze</span> na OBMEP (Olimpíada Brasileira de Matemática). 📊"
+          
         },
       },
     },

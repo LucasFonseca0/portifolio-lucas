@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useTranslation } from "react-i18next";
+import TranslateAnimation from "@/app/animation/TranslateAnimation.animation";
 
 const Projects = () => {
 const { t } = useTranslation(); 
@@ -81,13 +82,15 @@ const { t } = useTranslation();
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold z-10">
           {t("projects")}
         </h2>
-        <Image
-          src="/images/arrow.svg"
-          alt="arrow"
-          height={100}
-          width={100}
-          className="w-40 rotate-180 lg:w-52 xl:w-64 z-10"
-        />
+        <TranslateAnimation.TranslateRight>
+          <Image
+            src="/images/arrow.svg"
+            alt="arrow"
+            height={100}
+            width={100}
+            className="w-40 rotate-180 lg:w-52 xl:w-64 z-10"
+          />
+        </TranslateAnimation.TranslateRight>
       </div>
       <div className="flex mt-16 md:mt-24 lg:mt-28">
         <div className="w-[20%] flex justify-center items-center">
