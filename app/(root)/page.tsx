@@ -4,7 +4,7 @@ import AboutMe from "../components/homeComponents/AboutMe";
 import Skills from "../components/homeComponents/Skills";
 import Projects from "../components/homeComponents/Projects";
 import WhatPeopleThinkAboutMe from "../components/homeComponents/WhatPeopleThinkAboutMe";
-import Awards from "../components/homeComponents/awards";
+import Awards from "../components/homeComponents/Awards";
 
 export default function Home() {
   return (
