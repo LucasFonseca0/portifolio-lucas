@@ -16,12 +16,18 @@ export const metadata: Metadata = {
   title: 'Lucas Portfolio',
   description: 'Lucas Portfolio',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicoon.ico',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
+    other: [
+      { rel: 'icon', type: 'image/png', sizes: '32x32', url: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', url: '/favicon-16x16.png' }
+    ]
   },
-  
 };
+
+  
+
 
 export default function RootLayout({
   children,
@@ -30,6 +36,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+    <Head>
+        <link rel="icon" href="/favicoon.ico" />
+        <link rel="shortcut icon" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </Head>
       <body className={`${poppins.className} bg-black text-white`}>
         <NextUIProvider>
           {children}
