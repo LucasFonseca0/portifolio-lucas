@@ -27,7 +27,7 @@ const Awards = () => {
           <div key={index} className='flex flex-col items-center'>
             {index !== 0 && <div className="w-0.5 h-12 border-l-2 border-dashed border-primaryDark"></div>}
             <div className='p-6 animate-fade-in-up flex items-center justify-center text-center'>
-              <p className='text-lg sm:text-xl md:text-2xl text-primary font-semibold'>
+              <p className='text-lg sm:text-xl md:text-2xl text-gray-900 font-semibold'>
                 <Trans i18nKey={`award_${index + 1}`} components={{ span: <span className="text-primaryDarkest" /> }} />
               </p>
             </div>
