@@ -79,7 +79,7 @@ const { t } = useTranslation();
     >
       <div className="flex flex-row-reverse items-center justify-center sm:justify-start sm:m-0 gap-6 sm:gap-8 sm:mr-[20%] md:mr-[20%] lg:mr-[20%] xl:mr-[23%] 2xl:mr-[26%]">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold z-10">
-          Projects
+          {t("projects")}
         </h2>
         <Image
           src="/images/arrow.svg"
