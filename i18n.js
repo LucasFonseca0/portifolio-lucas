@@ -40,7 +40,13 @@ i18n
           "mozart_soares": "<0>@Mozart Soares</0> - Fullstack developer",
           "review_mozart": "Lucas is a very <0>hardworking</0> and <0>talented</0> developer. He navigates through challenges, quickly learns new technologies, and adapts to new teams, stacks, and projects. He is an excellent addition to any team and has proven his skills in diverse projects using various languages and working in all areas (front-end, back-end, and databases). I am confident that his profile suits perfectly any software engineer opportunities that may arise.",
           "calvin_soares": "<0>@Calvin Soares</0> - Fullstack developer",
-          "review_calvin": "Lucas is a very <0>hardworking</0> person, always creating programming content, always helping in any way he can. He is a good person and an even better professional."
+          "review_calvin": "Lucas is a very <0>hardworking</0> person, always creating programming content, always helping in any way he can. He is a good person and an even better professional.",
+          "awards": "Awards",
+          "award_1": "2023 – <span>Gold medal</span> in the regional chess tournament of northern Portugal. 🏆",
+          "award_2": "2023 – <span>Gold medal</span> in the district chess tournament of Viana do Castelo, Portugal. 🏆",
+          "award_3": "2019 – <span>Bronze medal</span> in OBMEP (Brazilian Mathematics Olympiad). 📊",
+          "award_4": "2019 - <span>Bronze medal</span> in OBA (Brazilian Astronomy Olympiad). 🚀",
+          "award_5": "2017 - <span>Bronze medal</span> in OBMEP (Brazilian Mathematics Olympiad). 📊"
         },
       },
       pt: {
@@ -74,7 +80,13 @@ i18n
           "mozart_soares": "<0>@Mozart Soares</0> - Desenvolvedor Fullstack",
           "review_mozart": "Lucas é um desenvolvedor muito <0>trabalhador</0> e <0>talentoso</0>. Ele trabalha superando qualquer desafio e é capaz de aprender rapidamente novas tecnologias e se adaptar a novas equipes, stacks e projetos. Ele é uma excelente adição a qualquer equipe e provou suas habilidades em projetos diversos, usando várias linguagens e trabalhando em todas as áreas (front-end, back-end e bancos de dados). Estou confiante de que seu perfil se encaixa perfeitamente em qualquer oportunidade de engenheiro de software que possa surgir.",
           "calvin_soares": "<0>@Calvin Soares</0> - Desenvolvedor Fullstack",
-          "review_calvin": "Lucas é uma pessoa muito <0>esforçada</0>, sempre criando conteúdo de programação, sempre ajudando da forma que pode. É uma boa pessoa e um profissional melhor ainda."
+          "review_calvin": "Lucas é uma pessoa muito <0>esforçada</0>, sempre criando conteúdo de programação, sempre ajudando da forma que pode. É uma boa pessoa e um profissional melhor ainda.",
+          "awards": "Prêmios",
+          "award_1": "2023 – <span>Medalha de ouro</span> no torneio regional de xadrez do norte de Portugal. 🏆",
+          "award_2": "2023 – <span>Medalha de ouro</span> no torneio distrital de xadrez de Viana do Castelo, Portugal. 🏆",
+          "award_3": "2019 – <span>Medalha de bronze</span> na OBMEP (Olimpíada Brasileira de Matemática). 📊",
+          "award_4": "2019 - <span>Medalha de bronze</span> na OBA (Olimpíada Brasileira de Astronomia). 🚀",
+          "award_5": "2017 - <span>Medalha de bronze</span> na OBMEP (Olimpíada Brasileira de Matemática). 📊"
         },
       },
     },
