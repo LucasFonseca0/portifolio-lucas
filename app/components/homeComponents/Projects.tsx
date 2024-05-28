@@ -53,7 +53,14 @@ const { t } = useTranslation();
         link: "https://github.com/Marcos9868/devjobsbackend",
         tecnologies: ["C#", "APS.net8", "Entity Framework", "Postgresql", "Angular 17"],
         isInDevelopment: true
-    },
+    },{
+      title: t('portfolio_title'),
+      description: t('portfolio_description'),
+      imageUrl: "/projectImages/portfolio.png",
+      link: "https://lucas-fonseca.vercel.app",
+      tecnologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      isInDevelopment: false
+  },
 ]
   const [selectedId, setSelectedId] = useState<null | number>(null);
 

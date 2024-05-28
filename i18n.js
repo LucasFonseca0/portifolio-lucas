@@ -42,7 +42,10 @@ i18n
           "award_2": "2023 – <span>Gold medal</span> in the district chess tournament of Viana do Castelo, Portugal. 🏆",
           "award_3": "2019 – <span>Bronze medal</span> in OBMEP (Brazilian Mathematics Olympiad). 📊",
           "award_4": "2019 - <span>Bronze medal</span> in OBA (Brazilian Astronomy Olympiad). 🚀",
-          "award_5": "2017 - <span>Bronze medal</span> in OBMEP (Brazilian Mathematics Olympiad). 📊"
+          "award_5": "2017 - <span>Bronze medal</span> in OBMEP (Brazilian Mathematics Olympiad). 📊",
+          "portfolio_title": "Lucas Fonseca's Portfolio",
+          "portfolio_description": "This portfolio showcases my work as a Fullstack developer. It is built with Next.js, TypeScript, Tailwind CSS, and Framer Motion, highlighting my skills in creating responsive, performant, and interactive websites.",
+        
         },
       },
       pt: {
@@ -79,8 +82,10 @@ i18n
           "award_2": "2023 – <span>Medalha de ouro</span> no torneio distrital de xadrez de Viana do Castelo, Portugal. 🏆",
           "award_3": "2019 – <span>Medalha de bronze</span> na OBMEP (Olimpíada Brasileira de Matemática). 📊",
           "award_4": "2019 - <span>Medalha de bronze</span> na OBA (Olimpíada Brasileira de Astronomia). 🚀",
-          "award_5": "2017 - <span>Medalha de bronze</span> na OBMEP (Olimpíada Brasileira de Matemática). 📊"
-        },
+          "award_5": "2017 - <span>Medalha de bronze</span> na OBMEP (Olimpíada Brasileira de Matemática). 📊",
+          "portfolio_title": "Portfólio de Lucas Fonseca",
+          "portfolio_description": "Este portfólio exibe meu trabalho como desenvolvedor Fullstack. Foi construído com Next.js, TypeScript, Tailwind CSS e Framer Motion, destacando minhas habilidades na criação de websites responsivos, performáticos e interativos.",
+          },
       },
     },
     lng: 'en',
