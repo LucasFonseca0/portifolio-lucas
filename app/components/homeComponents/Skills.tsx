@@ -61,7 +61,7 @@ const Skills = () => {
                   logoName={data}
                   className="w-8 h-8  sm:w-14 sm:h-14 lg:w-20 lg:h-20 "
                 />
-                <p className="text-xs font-bold">
+                <p className="text-xs text-center flex justify-center items-center m-auto font-bold">
                   {data.replace(data[0], data[0].toUpperCase())}
                 </p>
               </div>
