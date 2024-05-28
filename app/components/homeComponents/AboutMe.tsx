@@ -64,7 +64,7 @@ const AboutMe = () => {
           ></Image>
         
         <TranslateAnimation.TranslateLeft>
-          <div className=" m-auto z-10  w-[80%] mt-6 sm:mt-0 font-bold text-base md:text-sm sm:text-xs lg:text-lg 2xl:text-2xl text-center sm:text-start sm:w-[40%] sm:ml-[10%]">
+          <div className=" m-auto z-10  w-[80%] mt-6 sm:mt-0 font-semibold text-base md:text-sm sm:text-xs lg:text-lg 2xl:text-2xl text-center sm:text-start sm:w-[40%] sm:ml-[10%]">
             <Trans i18nKey="about_me_text" components={{ 1: <span className="text-secondary"/>, 2: <br />,3:<span className="text-primaryDarkest"/> }} />
           </div>
         </TranslateAnimation.TranslateLeft>
