@@ -11,3 +11,4 @@ Este portfólio foi criado com as seguintes tecnologias:
 - **Framer Motion**
 
 Acesse o link acima para explorar meus projetos e saber mais sobre meu trabalho!
+
