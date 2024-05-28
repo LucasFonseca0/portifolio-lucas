@@ -136,7 +136,7 @@ const { t } = useTranslation();
                         </div>
                       </div>
                     )}
-                    <p className="font-semibold text-[85%]  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+                    <p className="font-semibold text-[85%] mt-1  md:mt-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
                       {data.title}
                     </p>
                   </motion.div>
