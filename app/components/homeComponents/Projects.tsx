@@ -10,59 +10,59 @@ import { useTranslation } from "react-i18next";
 import TranslateAnimation from "@/app/animation/TranslateAnimation.animation";
 
 const Projects = () => {
-const { t } = useTranslation(); 
-
+  const { t } = useTranslation();
+  const [selectedId, setSelectedId] = useState<null | number>(null);
 
   const projectList: ProjectsInterface[] = [
     {
-        title: t('hotelHopper_title'),
-        description: t('hotelHopper_description'),
-        imageUrl: "/projectImages/hotelHopper.png",
-        link: "https://github.com/LucasFonseca0/HotelHopper",
-        tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Next UI", "Zod"],
-        isInDevelopment: false
+      title: t('hotelHopper_title'),
+      description: t('hotelHopper_description'),
+      imageUrl: "/projectImages/hotelHopper.png",
+      link: "https://github.com/LucasFonseca0/HotelHopper",
+      tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Next UI", "Zod"],
+      isInDevelopment: false
     },
     {
-        title: t('authSystem_title'),
-        description: t('authSystem_description'),
-        imageUrl: "/projectImages/yummi.png",
-        link: "https://github.com/LucasFonseca0/AuthSystem-RefreshJWTtoken-GoogleAuth-EmailVerification",
-        tecnologies: ["NestJS", "graphQL", "MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Zod", "NextAuth", "nodeMailer"],
-        isInDevelopment: false
+      title: t('authSystem_title'),
+      description: t('authSystem_description'),
+      imageUrl: "/projectImages/yummi.png",
+      link: "https://github.com/LucasFonseca0/AuthSystem-RefreshJWTtoken-GoogleAuth-EmailVerification",
+      tecnologies: ["NestJS", "graphQL", "MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Zod", "NextAuth", "nodeMailer"],
+      isInDevelopment: false
     },
     {
-        title: t('inventoryApp_title'),
-        description: t('inventoryApp_description'),
-        imageUrl: "/projectImages/StockManager.png",
-        link: "https://github.com/LucasFonseca0/inventory-management-app",
-        tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "bootstrap CSS", "Zod"],
-        isInDevelopment: false
+      title: t('inventoryApp_title'),
+      description: t('inventoryApp_description'),
+      imageUrl: "/projectImages/StockManager.png",
+      link: "https://github.com/LucasFonseca0/inventory-management-app",
+      tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "bootstrap CSS", "Zod"],
+      isInDevelopment: false
     },
     {
-        title: t('dotNetLibrary_title'),
-        description: t('dotNetLibrary_description'),
-        imageUrl: "/projectImages/DotNetLibrary-RestfulAPI-SQL-server.svg",
-        link: "https://github.com/LucasFonseca0/DotNetLibrary-RestfulAPI-SQL-server",
-        tecnologies: ["C#", "APS.net8", "Entity Framework", "SQL server"],
-        isInDevelopment: false
+      title: t('dotNetLibrary_title'),
+      description: t('dotNetLibrary_description'),
+      imageUrl: "/projectImages/DotNetLibrary-RestfulAPI-SQL-server.svg",
+      link: "https://github.com/LucasFonseca0/DotNetLibrary-RestfulAPI-SQL-server",
+      tecnologies: ["C#", "APS.net8", "Entity Framework", "SQL server"],
+      isInDevelopment: false
     },
     {
-        title: t('consoleJob_title'),
-        description: t('consoleJob_description'),
-        imageUrl: "",
-        link: "https://github.com/Marcos9868/devjobsbackend",
-        tecnologies: ["C#", "APS.net8", "Entity Framework", "Postgresql", "Angular 17"],
-        isInDevelopment: true
-    },{
+      title: t('consoleJob_title'),
+      description: t('consoleJob_description'),
+      imageUrl: "",
+      link: "https://github.com/Marcos9868/devjobsbackend",
+      tecnologies: ["C#", "APS.net8", "Entity Framework", "Postgresql", "Angular 17"],
+      isInDevelopment: true
+    },
+    {
       title: t('portfolio_title'),
       description: t('portfolio_description'),
       imageUrl: "/projectImages/portfolio.png",
       link: "https://lucas-fonseca.vercel.app",
       tecnologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
       isInDevelopment: false
-  },
-]
-  const [selectedId, setSelectedId] = useState<null | number>(null);
+    },
+  ];
 
   const Dots = () => (
     <div className="grid grid-cols-2 w-10 gap-2 md:gap-3 lg:gap-4">
@@ -115,40 +115,39 @@ const { t } = useTranslation();
             }}
             className="z-50 top-1/2 -translate-y-1/2 h-auto"
           >
-            {projectList &&
-              projectList.map((data, index) => (
-                <SwiperSlide key={index} onClick={() => setSelectedId(index)}>
-                  <motion.div layoutId={`card-${index}`} className="relative">
-                    {data.imageUrl.length > 0 ? (
-                      <motion.div
-                        layoutId={`image-${index}`}
-                        className="relative"
-                        style={{ paddingTop: "80%" }}
-                      >
-                        <Image
-                          alt="Project image"
-                          src={data.imageUrl}
-                          fill
-                          style={{ objectFit: "cover" }}
-                          className="w-full h-full bg-primary"
-                        />
-                      </motion.div>
-                    ) : (
-                      <div
-                        className="relative bg-secondary flex items-center justify-center text-white"
-                        style={{ paddingTop: "80%" }}
-                      >
-                        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-[65%] sm:text-md md:text-lg lg:text-xl xl:text-2xl">
-                          In Development
-                        </div>
+            {projectList.map((data, index) => (
+              <SwiperSlide key={index} onClick={() => setSelectedId(index)}>
+                <motion.div layoutId={`card-${index}`} className="relative">
+                  {data.imageUrl ? (
+                    <motion.div
+                      layoutId={`image-${index}`}
+                      className="relative"
+                      style={{ paddingTop: "80%" }}
+                    >
+                      <Image
+                        alt="Project image"
+                        src={data.imageUrl}
+                        fill
+                        style={{ objectFit: "cover" }}
+                        className="w-full h-full bg-primary"
+                      />
+                    </motion.div>
+                  ) : (
+                    <div
+                      className="relative bg-secondary flex items-center justify-center text-white"
+                      style={{ paddingTop: "80%" }}
+                    >
+                      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-[65%] sm:text-md md:text-lg lg:text-xl xl:text-2xl">
+                        In Development
                       </div>
-                    )}
-                    <p className="font-semibold text-[85%] mt-1  md:mt-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-                      {data.title}
-                    </p>
-                  </motion.div>
-                </SwiperSlide>
-              ))}
+                    </div>
+                  )}
+                  <p className="font-semibold text-[85%] mt-1 md:mt-2 sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+                    {data.title}
+                  </p>
+                </motion.div>
+              </SwiperSlide>
+            ))}
           </Swiper>
 
           <AnimatePresence>
@@ -166,7 +165,7 @@ const { t } = useTranslation();
                   onClick={(e) => e.stopPropagation()}
                 >
                   <div className="relative">
-                    {projectList[selectedId]?.imageUrl.length > 0 && (
+                    {projectList[selectedId]?.imageUrl && (
                       <motion.div
                         layoutId={`image-${selectedId}`}
                         className="relative pt-[80%]"
@@ -191,7 +190,7 @@ const { t } = useTranslation();
                       {projectList[selectedId]?.tecnologies.join(", ")}
                     </motion.p>
                     {projectList[selectedId]?.isInDevelopment && (
-                      <motion.p className="mt-4">{'In Development'}</motion.p>
+                      <motion.p className="mt-4">In Development</motion.p>
                     )}
                     <div className="flex justify-end gap-4">
                       <motion.button
