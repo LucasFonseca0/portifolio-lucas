@@ -50,7 +50,7 @@ const AboutMe = () => {
           className="z-50 w-[75%] overflow-visible m-auto max-w-96 sm:w-48 md:w-64 lg:w-72 xl:w-80 2xl:w-96"
         />
         <TranslateAnimation.TranslateLeft>
-          <div className="m-auto z-10 w-[80%] mt-6 sm:mt-0 font-semibold text-base md:text-sm sm:text-xs lg:text-lg xl:text-xl 2xl:text-2xl text-center sm:text-start sm:w-[40%] sm:ml-[10%]">
+          <div className="m-auto z-10 w-[80%] mt-6 sm:mt-0 font-semibold text-base md:text-sm sm:text-xs lg:text-lg xl:text-xl 2xl:text-2xl text-center sm:text-start sm:w-[50%] md:w-[50%] sm:ml-[10%]">
             <Trans i18nKey="about_me_text" components={{ 1: <span className="text-secondary"/>, 2: <br />, 3: <span className="text-primaryDarkest"/> }} />
           </div>
         </TranslateAnimation.TranslateLeft>

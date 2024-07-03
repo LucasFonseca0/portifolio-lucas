@@ -16,7 +16,7 @@ const WhatPeopleThinkAboutMe = () => {
         <div className="flex items-center gap-2">
           <Avatar
             showFallback
-            src="https://media.licdn.com/dms/image/D4D03AQGjA3jGx6U-Sw/profile-displayphoto-shrink_200_200/0/1712836047078?e=1722470400&v=beta&t=In6LzI9CzwbbcZ8e35_J7ycPkiT-NktLMltIveghc-4"
+            src="/reviewsImages/leo.png"
             className="h-[15%] sm:w-16 sm:h-16 md:w-20 md:h-20 text-large relative z-20"
           />
           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
@@ -41,7 +41,7 @@ const WhatPeopleThinkAboutMe = () => {
         <div className="flex items-center sm:w-[65%] lg:w-[55%] flex-row-reverse gap-2">
           <Avatar
             showFallback
-            src="https://media.licdn.com/dms/image/D4D03AQFYSd9F40GqFw/profile-displayphoto-shrink_200_200/0/1707770266830?e=1722470400&v=beta&t=T2B_CdwYJJus2879DaJTyUw2Y8UzqaUsvEYEPbXKFa4"
+            src="/reviewsImages/mozart.png"
             className="h-[15%] sm:w-16 sm:h-16 md:w-20 md:h-20 text-large relative z-20"
           />
           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
@@ -66,7 +66,7 @@ const WhatPeopleThinkAboutMe = () => {
         <div className="flex items-center gap-2">
           <Avatar
             showFallback
-            src="https://media.licdn.com/dms/image/D4D35AQFH5jhSVPXHRA/profile-framedphoto-shrink_800_800/0/1714302476530?e=1717408800&v=beta&t=LOBe2a-TdWs_RBD3B6nXwwJA3_MiCA2B97U4LE9-qY0"
+            src="/reviewsImages/Calvin.png"
             className="h-[15%] sm:w-16 sm:h-16 md:w-20 md:h-20 text-large relative z-20"
           />
           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">

@@ -24,12 +24,12 @@ const Footer = () => {
           <p>lucas.ribeiro.24444@gmail.com</p>
         </div>
       </div>
-      <a href="/docs/CV-LucasFonseca-English.docx">
+      <a href="/docs/CV-LucasFonseca-English.pdf">
         <div className="absolute text-xl md:text-2xl lg:text-3xl bg-black top-0 right-[10%] -translate-y-1/2 text-primaryDarkest rounded-full h-20 w-20 sm:h-24 sm:w-24 md:w-28 md:h-28 lg:h-32 lg:w-32 p-4 flex flex-col justify-around items-center">
           <FaDownload className=" text-white" />
           <p className="font-bold ">CV</p>
         </div>
-      </a>
+      </a> 
     </footer>
   );
 };
