@@ -15,54 +15,96 @@ const Projects = () => {
 
   const projectList: ProjectsInterface[] = [
     {
-      title: t('hotelHopper_title'),
-      description: t('hotelHopper_description'),
+      title: t("hotelHopper_title"),
+      description: t("hotelHopper_description"),
       imageUrl: "/projectImages/hotelHopper.png",
       link: "https://github.com/LucasFonseca0/HotelHopper",
-      tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Next UI", "Zod"],
-      isInDevelopment: false
+      tecnologies: [
+        "NestJS",
+        "MongoDB",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Next UI",
+        "Zod",
+      ],
+      isInDevelopment: false,
     },
     {
-      title: t('authSystem_title'),
-      description: t('authSystem_description'),
+      title: t("authSystem_title"),
+      description: t("authSystem_description"),
       imageUrl: "/projectImages/yummi.png",
-      link: "https://github.com/LucasFonseca0/AuthSystem-RefreshJWTtoken-GoogleAuth-EmailVerification",
-      tecnologies: ["NestJS", "graphQL", "MongoDB", "Next.js", "TypeScript", "Tailwind CSS", "Zod", "NextAuth", "nodeMailer"],
-      isInDevelopment: false
+      link:
+        "https://github.com/LucasFonseca0/AuthSystem-RefreshJWTtoken-GoogleAuth-EmailVerification",
+      tecnologies: [
+        "NestJS",
+        "graphQL",
+        "MongoDB",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Zod",
+        "NextAuth",
+        "nodeMailer",
+      ],
+      isInDevelopment: false,
     },
     {
-      title: t('inventoryApp_title'),
-      description: t('inventoryApp_description'),
+      title: t("inventoryApp_title"),
+      description: t("inventoryApp_description"),
       imageUrl: "/projectImages/StockManager.png",
       link: "https://github.com/LucasFonseca0/inventory-management-app",
-      tecnologies: ["NestJS", "MongoDB", "Next.js", "TypeScript", "bootstrap CSS", "Zod"],
-      isInDevelopment: false
+      tecnologies: [
+        "NestJS",
+        "MongoDB",
+        "Next.js",
+        "TypeScript",
+        "bootstrap CSS",
+        "Zod",
+      ],
+      isInDevelopment: false,
     },
     {
-      title: t('dotNetLibrary_title'),
-      description: t('dotNetLibrary_description'),
+      title: t("dotNetLibrary_title"),
+      description: t("dotNetLibrary_description"),
       imageUrl: "/projectImages/DotNetLibrary-RestfulAPI-SQL-server.svg",
-      link: "https://github.com/LucasFonseca0/DotNetLibrary-RestfulAPI-SQL-server",
+      link:
+        "https://github.com/LucasFonseca0/DotNetLibrary-RestfulAPI-SQL-server",
       tecnologies: ["C#", "APS.net8", "Entity Framework", "SQL server"],
-      isInDevelopment: false
+      isInDevelopment: false,
     },
     {
-      title: t('consoleJob_title'),
-      description: t('consoleJob_description'),
+      title: t("consoleJob_title"),
+      description: t("consoleJob_description"),
       imageUrl: "",
       link: "https://github.com/Marcos9868/devjobsbackend",
-      tecnologies: ["C#", "APS.net8", "Entity Framework", "Postgresql", "Angular 17"],
-      isInDevelopment: true
+      tecnologies: [
+        "C#",
+        "APS.net8",
+        "Entity Framework",
+        "Postgresql",
+        "Angular 17",
+      ],
+      isInDevelopment: true,
     },
     {
-      title: t('portfolio_title'),
-      description: t('portfolio_description'),
+      title: t("portfolio_title"),
+      description: t("portfolio_description"),
       imageUrl: "/projectImages/portfolio.png",
       link: "https://lucas-fonseca.vercel.app",
       tecnologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      isInDevelopment: false
+      isInDevelopment: false,
+    },
+    {
+      title: t("class-a_title"),
+      description: t("class-a_description"),
+      imageUrl: "/projectImages/classa.png",
+      link: "https://class-a.vercel.app",
+      tecnologies: ["Next.js", "TypeScript", "Tailwind CSS", "Mongoose", "MongoDB"],
+      isInDevelopment: false,
     },
   ];
+
 
   const Dots = () => (
     <div className="grid grid-cols-2 w-10 gap-2 md:gap-3 lg:gap-4">

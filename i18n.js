@@ -45,7 +45,9 @@ i18n
           "award_5": "2017 - <span>Bronze medal</span> in OBMEP (Brazilian Mathematics Olympiad). 📊",
           "portfolio_title": "Lucas Fonseca's Portfolio",
           "portfolio_description": "This portfolio showcases my work as a Fullstack developer. It is built with Next.js, TypeScript, Tailwind CSS, and Framer Motion, highlighting my skills in creating responsive, performant, and interactive websites.",
-        
+          "class-a_title": "Class A",
+          "class-a_description": "A institutional website developed using Next.js. The project features a fully functional lead capture system, securely storing visitor information in a MongoDB database with Mongoose. The site is SEO optimized, ensuring greater visibility in search engines."
+
         },
       },
       pt: {
@@ -85,7 +87,9 @@ i18n
           "award_5": "2017 - <span>Medalha de bronze</span> na OBMEP (Olimpíada Brasileira de Matemática). 📊",
           "portfolio_title": "Portfólio de Lucas Fonseca",
           "portfolio_description": "Este portfólio exibe meu trabalho como desenvolvedor Fullstack. Foi construído com Next.js, TypeScript, Tailwind CSS e Framer Motion, destacando minhas habilidades na criação de websites responsivos, performáticos e interativos.",
-          },
+          "class-a_title": "Class A",
+          "class-a_description": "Um site institucional completo desenvolvido usando Next.js. O projeto inclui um sistema de captura de leads totalmente funcional, onde as informações dos visitantes são armazenadas com segurança em um banco de dados MongoDB usando Mongoose. O site é otimizado para SEO, garantindo maior visibilidade nos mecanismos de busca."
+        },
       },
     },
     lng: 'en',
