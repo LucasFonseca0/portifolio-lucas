@@ -22,6 +22,8 @@ const Experience = () => {
                 t("exp1_resp2"),
                 t("exp1_resp3"),
                 t("exp1_resp4"),
+                t("exp1_resp5"),
+                t("exp1_resp6"),
             ],
             technologies: [
                 "ASP.NET Core 8",
