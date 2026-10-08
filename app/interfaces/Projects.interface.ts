@@ -1,4 +1,4 @@
-interface ProjectsInterface{
+type ProjectsInterface = {
     title: string
     description:string
     imageUrl:string

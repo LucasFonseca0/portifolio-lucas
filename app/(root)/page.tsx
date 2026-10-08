@@ -3,6 +3,7 @@ import Introduction from "../components/homeComponents/Introduction";
 import AboutMe from "../components/homeComponents/AboutMe";
 import Skills from "../components/homeComponents/Skills";
 import Projects from "../components/homeComponents/Projects";
+import Experience from "../components/homeComponents/Experience";
 import WhatPeopleThinkAboutMe from "../components/homeComponents/WhatPeopleThinkAboutMe";
 import Awards from "../components/homeComponents/Awards";
 import Footer from "../components/homeComponents/Footer";
@@ -14,8 +15,9 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Projects />
+      <Experience />
       <WhatPeopleThinkAboutMe />
-      <Awards/>
+      <Awards />
       <Footer />
     </div>
   );
